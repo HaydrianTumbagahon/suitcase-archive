@@ -1,0 +1,17 @@
+{
+  "name": "Suitcase Archive",
+  "short_name": "Suitcase",
+  "description": "An unofficial field guide and archive for Reverse: 1999.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0B12",
+  "theme_color": "#0D0B12",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

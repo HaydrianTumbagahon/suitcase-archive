@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Beast",
+    "name": "Beast",
+    "triangle": "A",
+    "beats": "Plant",
+    "weakTo": null,
+    "closingMatchupUnverified": true
+  },
+  {
+    "id": "Plant",
+    "name": "Plant",
+    "triangle": "A",
+    "beats": "Star",
+    "weakTo": "Beast",
+    "closingMatchupUnverified": false
+  },
+  {
+    "id": "Mineral",
+    "name": "Mineral",
+    "triangle": "B",
+    "beats": "Spirit",
+    "weakTo": null,
+    "closingMatchupUnverified": true
+  },
+  {
+    "id": "Star",
+    "name": "Star",
+    "triangle": "A",
+    "beats": null,
+    "weakTo": "Plant",
+    "closingMatchupUnverified": true
+  },
+  {
+    "id": "Spirit",
+    "name": "Spirit",
+    "triangle": "B",
+    "beats": "Intellect",
+    "weakTo": "Mineral",
+    "closingMatchupUnverified": false
+  },
+  {
+    "id": "Intellect",
+    "name": "Intellect",
+    "triangle": "B",
+    "beats": null,
+    "weakTo": "Spirit",
+    "closingMatchupUnverified": true
+  }
+]

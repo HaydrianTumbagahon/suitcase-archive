@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "scene": "01",
+    "sceneLabel": "THE ARCHIVE",
+    "sceneTitle": "An archive for a world in reverse",
+    "guideLabel": "FIELD GUIDE · EDITION",
+    "headline": "SUITCASE ARCHIVE",
+    "tagline": "A suitcase shelters Arcanists as Vertin travels through past eras in the wake of the Storm.",
+    "charactersCta": "Browse Characters",
+    "storyCta": "Read the Story"
+  },
+  "afflatusScene": "02",
+  "afflatusLabel": "SIX EXPRESSIONS",
+  "afflatusTitle": "Six afflatus",
+  "premise": {
+    "scene": "03",
+    "sceneLabel": "A WORLD IN REVERSE",
+    "title": "The Premise",
+    "entries": [
+      { "loreId": "the-storm", "title": "The Storm" },
+      { "loreId": "vertin", "title": "The Timekeeper" },
+      { "loreId": "the-suitcase", "title": "The Suitcase" }
+    ]
+  },
+  "featured": {
+    "scene": "04",
+    "sceneLabel": "SELECTED DOSSIERS",
+    "title": "Featured arcanists",
+    "countsLabel": "ARCHIVE COUNT",
+    "countLabels": ["Arcanists catalogued", "Story chapters", "Event stories", "Manus profiles"]
+  },
+  "teasers": {
+    "scene": "05",
+    "sceneLabel": "FIELD DESK",
+    "sceneTitle": "Dispatches from the archive",
+    "storyTitle": "Story records",
+    "metaTitle": "Current meta",
+    "storyLink": "Enter the story index",
+    "metaLink": "Open field notes"
+  }
+}

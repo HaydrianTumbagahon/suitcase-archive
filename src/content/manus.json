@@ -1,0 +1,12 @@
+[
+  {"id":"arcana","name":"Arcana","title":"Mother of Resurrection","rank":"Lord","blurb":"The Manus leader stands at the centre of the faction's designs. The supplied notes place her within early Chicago events.","appearances":["chapter-1-in-our-time","chapter-2-tender-is-the-night"],"spoiler":true,"draft":true,"image":null},
+  {"id":"forget-me-not","name":"Forget Me Not","title":null,"rank":"Lord","blurb":"An early presence whose threat persists in later years. Further particulars are left unverified.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"taira","name":"Taira","title":null,"rank":"Lord","blurb":"A crab-like figure with a formal, pragmatic manner. The supplied outline connects Taira to the Silence thread and the Foundation assault.","appearances":["a-flowing-feast","chapter-13-on-anothers-sorrow"],"spoiler":true,"draft":true,"image":null},
+  {"id":"hypothetik","name":"Hypothétik","title":null,"rank":"Lord","blurb":"Child-related themes surround this unsettling figure. No specific appearance is confirmed here.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"ustrina","name":"Ustrina","title":null,"rank":"Lord","blurb":"Ustrina is more at ease among the dead than the living, with blue flame and Styx imagery attached to the record. Further particulars remain unverified.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"lyra","name":"Lyra","title":null,"rank":"Lord","blurb":"Lyra is identified as Coppélia's creator and associated with wind and ferrying forces. The Chapter 13 invasion gives her a significant part.","appearances":["chapter-13-on-anothers-sorrow"],"spoiler":true,"draft":true,"image":null},
+  {"id":"santos","name":"Santos","title":null,"rank":null,"blurb":"The notes place Santos within the wider company of Apostles and Lords.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"matheus","name":"Matheus","title":null,"rank":null,"blurb":"The notes place Matheus within the wider company of Apostles and Lords.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"ilmek","name":"İlmek","title":null,"rank":null,"blurb":"The notes place İlmek within the wider company of Apostles and Lords.","appearances":null,"spoiler":true,"draft":true,"image":null},
+  {"id":"bittersweet-nectar","name":"Bittersweet / Nectar","title":null,"rank":null,"blurb":"The notes place Bittersweet / Nectar within the wider company of Apostles and Lords.","appearances":null,"spoiler":true,"draft":true,"image":null}
+]

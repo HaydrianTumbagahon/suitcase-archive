@@ -1,0 +1,67 @@
+[
+  {
+    "id":"burn",
+    "name":"Burn formation",
+    "archetype":"Burn",
+    "explainer":"This formation is grouped around characters carrying the Burn role tag.",
+    "members":[{"characterId":"spathodea","carry":true},{"characterId":"isolde","carry":false},{"characterId":"beryl","carry":false},{"characterId":"rhiannon","carry":false}],
+    "howItWorks":"Spathodea and Isolde bring the Burn tag, with Spathodea marked as the carry. Beryl's DPS tag and Rhiannon's Support tag complete this four-person draft.",
+    "tierLabel":null,
+    "gameVersion":"3.8",
+    "opinion":true,
+    "draft":true,
+    "image":null
+  },
+  {
+    "id":"poison",
+    "name":"Poison formation",
+    "archetype":"Poison",
+    "explainer":"This formation gathers characters filed under the Poison role tag.",
+    "members":[{"characterId":"tuesday","carry":false},{"characterId":"ramona","carry":true},{"characterId":"beryl","carry":false},{"characterId":"rhiannon","carry":false}],
+    "howItWorks":"Tuesday and Ramona carry Poison tags, with Ramona marked as the Main Carry. Beryl's DPS tag and Rhiannon's Support tag fill the remaining places.",
+    "tierLabel":null,
+    "gameVersion":"3.8",
+    "opinion":true,
+    "draft":true,
+    "image":null
+  },
+  {
+    "id":"dynamo",
+    "name":"Dynamo formation",
+    "archetype":"Dynamo",
+    "explainer":"This formation is grouped around characters carrying the Dynamo role tag.",
+    "members":[{"characterId":"charon","carry":false},{"characterId":"enigma","carry":false},{"characterId":"lucy","carry":true},{"characterId":"rhiannon","carry":false}],
+    "howItWorks":"Charon, Enigma, and Lucy all carry the Dynamo tag, with Lucy marked as the carry. Rhiannon's Support role completes this role-led draft.",
+    "tierLabel":null,
+    "gameVersion":"3.8",
+    "opinion":true,
+    "draft":true,
+    "image":null
+  },
+  {
+    "id":"extra-action",
+    "name":"Extra Action formation",
+    "archetype":"Extra Action",
+    "explainer":"This formation is assembled from characters with the Extra Action role tag.",
+    "members":[{"characterId":"charon","carry":false},{"characterId":"beryl","carry":true},{"characterId":"fatutu","carry":false},{"characterId":"cornerstone","carry":false}],
+    "howItWorks":"All four members carry the Extra Action tag, while Beryl's DPS tag marks her as the carry. Charon, Fatutu, and Cornerstone retain their additional Support, Healer, and DPS roles.",
+    "tierLabel":null,
+    "gameVersion":"3.8",
+    "opinion":true,
+    "draft":true,
+    "image":null
+  },
+  {
+    "id":"lingering-glow",
+    "name":"Lingering Glow formation",
+    "archetype":"Lingering Glow",
+    "explainer":"This is a team style assembled around characters tagged Lingering Glow.",
+    "members":[{"characterId":"beryl","carry":true},{"characterId":"isolde","carry":false},{"characterId":"marsha","carry":false},{"characterId":"rhiannon","carry":false}],
+    "howItWorks":"Beryl, Isolde, and Marsha carry the Lingering Glow tag, with Beryl named as the carry. Isolde's DPS, Marsha's Shield and Support, and Rhiannon's Support tags supply the other listed roles.",
+    "tierLabel":null,
+    "gameVersion":"3.8",
+    "opinion":true,
+    "draft":true,
+    "image":null
+  }
+]

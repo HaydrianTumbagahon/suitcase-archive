@@ -1,0 +1,139 @@
+{
+  "name": "Suitcase Archive",
+  "gameVersion": "3.8",
+  "totalCrewMembers": 135,
+  "roles": [
+    "DPS",
+    "Burst DMG",
+    "Healer",
+    "Support",
+    "Sub-DPS",
+    "Main Carry",
+    "Dynamo",
+    "Extra Action",
+    "Burn",
+    "Poison",
+    "Dispeller",
+    "Assassination",
+    "Sustain",
+    "Barrier",
+    "Team Buffs",
+    "Conduit",
+    "Riposte",
+    "Shield",
+    "Lingering Glow",
+    "All-Rounder"
+  ],
+  "mechanics": {
+    "damageTypes": ["Reality", "Mental"],
+    "afflatusAdvantagePercent": 30
+  },
+  "manusPageNote": {
+    "summary": "The Lords are presented as high-ranking field agents, each with a distinct philosophy rather than a generic adversary role.",
+    "draft": true
+  },
+  "metaPage": {
+    "scene": "SCENE 04 — FIELD DESK",
+    "serial": "INDEX / 003",
+    "title": "Field notes",
+    "intro": "Version 3.8 draft opinions, kept separate from verified records.",
+    "banner": "MY OPINION",
+    "draft": "DRAFT",
+    "archetypeScene": "ARCHETYPE GUIDE",
+    "archetypeTitle": "Ways to play",
+    "teamsScene": "TEAM COMPS",
+    "teamsTitle": "Field formations",
+    "tiersScene": "MY TIER LIST",
+    "tiersTitle": "Personal placements",
+    "archetypeSceneNumber": "04.1",
+    "teamsSceneNumber": "04.2",
+    "tiersSceneNumber": "04.3",
+    "allArchetypes": "All archetypes",
+    "filterArchetypes": "Filter teams by archetype",
+    "filterRoles": "Filter tier list by role",
+    "allRoles": "All roles",
+    "tierUnrated": "Unrated",
+    "unratedReason": "No notes yet.",
+    "noTierEntries": "No character records are assigned to this placement.",
+    "noTeamEntries": "No formations match this archetype.",
+    "carryLabel": "Carry",
+    "openTierDetails": "Open tier notes for",
+    "closeTierDetails": "Close tier notes",
+    "tierReasonLabel": "My reason",
+    "openProfile": "Open character profile",
+    "unverified": "Unverified",
+    "unknownCharacter": "Unknown character",
+    "tierBands": [
+      { "label": "S+", "tone": "oxblood" },
+      { "label": "S", "tone": "brass" },
+      { "label": "A", "tone": "verdigris" },
+      { "label": "B", "tone": "fog" }
+    ]
+  },
+  "storyPage": {
+    "pageScene": "SCENE 03 — READING ROOM",
+    "pageSerial": "INDEX / 002",
+    "pageTitle": "Story records",
+    "intro": "A spoiler-marked guide arranged by the archive's play-order index.",
+    "sceneNumber": "—",
+    "timelineScene": "TIMELINE",
+    "timelineTitle": "Story timeline",
+    "eventScene": "EVENT STORIES",
+    "eventTitle": "Event stories",
+    "manusScene": "MANUS VINDICTAE",
+    "manusTitle": "Manus Vindictae",
+    "navigationLabel": "Story sections",
+    "timelineNavLabel": "Timeline",
+    "eventsNavLabel": "Events",
+    "manusNavLabel": "Manus",
+    "scrollProgressLabel": "Story page reading progress",
+    "allArcs": "All arcs",
+    "arcFilterLabel": "Filter the timeline by arc",
+    "showAllSpoilers": "Show all spoilers",
+    "hideAllSpoilers": "Hide all spoilers",
+    "revealSpoilers": "Reveal spoilers",
+    "hideSpoilers": "Hide spoilers",
+    "yearUnverified": "Year unverified",
+    "locationUnverified": "Location unverified",
+    "featuredLabel": "Featured",
+    "mentionsLabel": "Also named",
+    "emptyTimeline": "No records are filed under this arc.",
+    "manusSearchLabel": "Filter Manus by name",
+    "manusSearchPlaceholder": "Search names",
+    "manusEmpty": "No Manus records match that name.",
+    "appearancesLabel": "Appearances",
+    "unverified": "Unverified"
+  },
+  "lore": [
+    {
+      "id": "the-storm",
+      "title": "The Storm",
+      "summary": "On the final day of 1999, a force called the Storm reversed time and erased what it reached.",
+      "draft": true
+    },
+    {
+      "id": "vertin",
+      "title": "Vertin, the Timekeeper",
+      "summary": "A young woman of the St. Pavlov Foundation, Vertin is the only person known to withstand the Storm. Her suitcase shelters Arcanists and serves as her team's base while she moves through past eras to recruit them.",
+      "draft": true
+    },
+    {
+      "id": "the-suitcase",
+      "title": "The Suitcase",
+      "summary": "Vertin's suitcase shelters Arcanists and serves as the team's base while she travels through past eras to recruit them.",
+      "draft": true
+    },
+    {
+      "id": "the-crew",
+      "title": "The crew",
+      "summary": "Arcanists join Vertin in the field. Manus Vindictae stands among the forces opposing them.",
+      "draft": true
+    },
+    {
+      "id": "version-3-7",
+      "title": "Version 3.7",
+      "summary": "On Another's Sorrow brought the 3.0 story arc to its third-anniversary close.",
+      "draft": true
+    }
+  ]
+}

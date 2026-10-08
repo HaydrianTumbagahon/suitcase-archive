@@ -1,0 +1,53 @@
+{
+  "disclaimerLines": [
+    "Unofficial fan site.",
+    "Reverse: 1999 and all related names, characters and assets are property of Bluepoch.",
+    "Not affiliated with or endorsed by Bluepoch."
+  ],
+  "launchLines": [
+    {
+      "status": "OK",
+      "text": "Suitcase Archive is an unofficial, non-commercial fan project made out of love for Reverse: 1999."
+    },
+    {
+      "status": "OK",
+      "text": "This project is not affiliated with, endorsed by, or sponsored by Bluepoch."
+    },
+    {
+      "status": "INFO",
+      "text": "Reverse: 1999, its characters, names, story, and art belong to Bluepoch and their respective owners."
+    },
+    {
+      "status": "OK",
+      "text": "No game assets were ripped, extracted, or copied; images are placeholders pending permission or official press material."
+    },
+    {
+      "status": "OK",
+      "text": "Story summaries and descriptions are written independently in our own words."
+    },
+    {
+      "status": "OK",
+      "text": "No ads, paywalls, monetization, or items for sale."
+    },
+    {
+      "status": "NOTE",
+      "text": "Tier lists and team opinions are personal and may differ from the community."
+    },
+    {
+      "status": "NOTE",
+      "text": "Information is based on game version 3.8 and may contain errors or become outdated."
+    },
+    {
+      "status": "WARN",
+      "text": "Story sections contain spoilers."
+    },
+    {
+      "status": "INFO",
+      "text": "Rights holders may contact us at rights@example.com; we will respond promptly."
+    },
+    {
+      "status": "INFO",
+      "text": "This good-faith statement is not legal advice and does not represent an official license."
+    }
+  ]
+}

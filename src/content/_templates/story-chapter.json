@@ -1,0 +1,15 @@
+{
+  "id": "replace-with-lowercase-slug",
+  "order": 17,
+  "arc": "Main Story: Chapters 1-13",
+  "chapterLabel": "Chapter label",
+  "title": "Replace with chapter title",
+  "year": null,
+  "location": null,
+  "summary": "",
+  "mentions": [],
+  "featuredCharacters": [],
+  "spoiler": true,
+  "draft": true,
+  "image": null
+}

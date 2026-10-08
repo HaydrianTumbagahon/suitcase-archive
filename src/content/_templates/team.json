@@ -1,0 +1,18 @@
+{
+  "id": "replace-with-lowercase-slug",
+  "name": "Replace with team name",
+  "archetype": "Replace with an archetype",
+  "explainer": "",
+  "members": [
+    { "characterId": "replace-with-character-id", "carry": true },
+    { "characterId": "replace-with-character-id", "carry": false },
+    { "characterId": "replace-with-character-id", "carry": false },
+    { "characterId": "replace-with-character-id", "carry": false }
+  ],
+  "howItWorks": "",
+  "tierLabel": null,
+  "gameVersion": "3.8",
+  "opinion": true,
+  "draft": true,
+  "image": null
+}

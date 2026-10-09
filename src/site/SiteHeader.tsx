@@ -44,10 +44,6 @@ export function SiteHeader() {
   return (
     <header className="site-header" onKeyDown={menuOpen ? handleMenuKeyDown : undefined}>
       <Link aria-label="Suitcase Archive home" className="wordmark" to="/" onClick={closeMenu}>
-        <svg aria-hidden="true" className="wordmark-mark" viewBox="0 0 32 32">
-          <rect x="5" y="11" width="22" height="16" rx="2" />
-          <path d="M11 11V7h10v4M5 17h22M13 17v3m6-3v3" />
-        </svg>
         <span>Suitcase Archive</span>
       </Link>
       <button

@@ -1,31 +1,96 @@
 {
   "name": "Suitcase Archive",
   "gameVersion": "3.8",
-  "totalCrewMembers": 135,
+  "creator": "HADES",
+  "githubUrl": "https://github.com/HaydrianTumbagahon/suitcase-archive",
+  "footerNavigation": [
+    {
+      "label": "Characters",
+      "path": "/characters"
+    },
+    {
+      "label": "Story",
+      "path": "/story"
+    },
+    {
+      "label": "Meta",
+      "path": "/meta"
+    }
+  ],
+  "icons": {
+    "afflatus": {
+      "beast": "/images/icons/afflatus/beast.png",
+      "plant": "/images/icons/afflatus/plant.png",
+      "mineral": "/images/icons/afflatus/mineral.png",
+      "star": "/images/icons/afflatus/star.png",
+      "spirit": "/images/icons/afflatus/spirit.png",
+      "intellect": "/images/icons/afflatus/intellect.png"
+    },
+    "damage": {
+      "reality": null,
+      "mental": null
+    },
+    "roles": {}
+  },
+  "featuredRotation": {
+    "mode": "daily",
+    "count": 4
+  },
+  "teamGuide": {
+    "replacementGuide": "Replacement guide",
+    "bestLabel": "Best-in-slot",
+    "goodLabel": "Good replacements",
+    "acceptableLabel": "Acceptable / emergency",
+    "generalNotes": [
+      "Flutterpage, Rhiannon, Anjo Nala, Marsha, and Fatutu are flexible picks that appear in several replacement lists.",
+      "Replacing a character marked as very core may lower the team's effectiveness.",
+      "For a newer account, consider building one complete team before spreading resources across several lineups."
+    ]
+  },
   "roles": [
     "DPS",
-    "Burst DMG",
-    "Healer",
+    "Follow-up Attack",
     "Support",
-    "Sub-DPS",
-    "Main Carry",
-    "Dynamo",
-    "Extra Action",
-    "Burn",
-    "Poison",
-    "Dispeller",
+    "Debuff",
+    "Purify",
+    "Heal",
+    "Inspiration",
+    "Burst DMG",
     "Assassination",
-    "Sustain",
-    "Barrier",
-    "Team Buffs",
-    "Conduit",
-    "Riposte",
+    "Control",
+    "Dispeller",
+    "DEF",
     "Shield",
     "Lingering Glow",
-    "All-Rounder"
+    "Extra Action",
+    "Dynamo",
+    "Ritual",
+    "Remove Debuffs",
+    "Conduit",
+    "Array",
+    "Nasty Wound",
+    "Riposte",
+    "Moxie",
+    "Burn",
+    "Poison",
+    "Remove Buffs",
+    "Immunity",
+    "Rewrite",
+    "Reaper",
+    "Rank Up",
+    "Ultimate",
+    "Bloodtithe",
+    "Adaptive",
+    "Self-healing",
+    "Shift",
+    "All-Rounder",
+    "HP Sacrifice"
   ],
   "mechanics": {
-    "damageTypes": ["Reality", "Mental"],
+    "damageTypes": [
+      "Reality",
+      "Mental"
+    ],
     "afflatusAdvantagePercent": 30
   },
   "manusPageNote": {
@@ -62,13 +127,7 @@
     "tierReasonLabel": "My reason",
     "openProfile": "Open character profile",
     "unverified": "Unverified",
-    "unknownCharacter": "Unknown character",
-    "tierBands": [
-      { "label": "S+", "tone": "oxblood" },
-      { "label": "S", "tone": "brass" },
-      { "label": "A", "tone": "verdigris" },
-      { "label": "B", "tone": "fog" }
-    ]
+    "unknownCharacter": "Unknown character"
   },
   "storyPage": {
     "pageScene": "SCENE 03 — READING ROOM",
@@ -82,10 +141,12 @@
     "eventTitle": "Event stories",
     "manusScene": "MANUS VINDICTAE",
     "manusTitle": "Manus Vindictae",
+    "crossoversTitle": "Crossovers",
     "navigationLabel": "Story sections",
     "timelineNavLabel": "Timeline",
     "eventsNavLabel": "Events",
     "manusNavLabel": "Manus",
+    "crossoversNavLabel": "Crossovers",
     "scrollProgressLabel": "Story page reading progress",
     "allArcs": "All arcs",
     "arcFilterLabel": "Filter the timeline by arc",

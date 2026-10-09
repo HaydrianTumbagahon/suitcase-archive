@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import { Button, Chip, Icon, Marquee, Panel, SceneHeading, SmartImage, Sticker } from '../components/ui'
+import { Button, Chip, Icon, Marquee, Panel, Rarity, SceneHeading, SmartImage, Sticker } from '../components/ui'
 
 const sampleIcons = [
   { category: 'afflatus', values: ['Beast', 'Mineral', 'Plant', 'Star', 'Spirit', 'Intellect'] },
   { category: 'damage', values: ['Reality', 'Mental'] },
-  { category: 'role', values: ['DPS', 'Support', 'Dynamo', 'Healer', 'Extra Action'] },
-  { category: 'rarity', values: ['2', '3', '4', '5', '6'] },
+  { category: 'role', values: ['DPS', 'Support', 'Dynamo', 'Heal', 'Extra Action'] },
 ] as const
 
 export default function KitPage() {
@@ -13,7 +12,6 @@ export default function KitPage() {
 
   return (
     <div className="page-frame ui-kit">
-      <div className="scene-label">DESIGN DEPARTMENT — SPECIMEN SHEET</div>
       <h1>Interface kit</h1>
       <p className="page-intro">A field guide to the archive’s reusable interface pieces.</p>
 
@@ -35,7 +33,7 @@ export default function KitPage() {
       <section className="ui-kit__section" aria-labelledby="surfaces-heading">
         <h2 id="surfaces-heading">Surfaces &amp; filters</h2>
         <div className="ui-kit__grid">
-          <Panel serial={1}>
+          <Panel>
             <h3>Filed observation</h3>
             <p>Hard edges, clear hierarchy, and a paper trail for every record.</p>
           </Panel>
@@ -49,9 +47,9 @@ export default function KitPage() {
         </div>
       </section>
 
-      <section className="ui-kit__section" aria-labelledby="scene-heading">
-        <h2 id="scene-heading">Scene marker</h2>
-        <SceneHeading label="Reading room" number={4} scene={5} title="The reading room" />
+      <section className="ui-kit__section" aria-labelledby="section-heading">
+        <h2 id="section-heading">Section heading</h2>
+        <SceneHeading title="The reading room" />
       </section>
 
       <section className="ui-kit__section" aria-labelledby="image-heading">
@@ -63,18 +61,21 @@ export default function KitPage() {
       </section>
 
       <section className="ui-kit__section" aria-labelledby="icon-heading">
-        <h2 id="icon-heading">Glyph index</h2>
+        <h2 id="icon-heading">Optional label icons</h2>
         {sampleIcons.map(({ category, values }) => (
           <div className="ui-kit__icon-row" key={category}>
             <span className="ui-kit__icon-category">{category}</span>
             {values.map((value) => (
               <span className="ui-kit__icon-sample" key={value}>
                 <Icon category={category} value={value} />
-                <span>{value}</span>
               </span>
             ))}
           </div>
         ))}
+        <div className="ui-kit__icon-row">
+          <span className="ui-kit__icon-category">rarity</span>
+          {[2, 3, 4, 5, 6].map((value) => <Rarity key={value} value={value} />)}
+        </div>
       </section>
 
       <section className="ui-kit__section" aria-labelledby="marquee-heading">

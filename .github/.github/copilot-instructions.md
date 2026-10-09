@@ -45,7 +45,10 @@ Borders parchment or brass; shadows brass or oxblood. Hover = element shifts 4px
 
 ## Legal and content rules
 - Footer on every page: "Unofficial fan site. Reverse: 1999 and all related names, characters and assets are property of Bluepoch. Not affiliated with or endorsed by Bluepoch."
-- No ripped game assets. All images are placeholders for now.
+- ## Human-made feel
+- No decorative eyebrow or kicker text above headings (no "SCENE 02", no "PUBLIC ACCESS TERMINAL", no "FIELD GUIDE · EDITION 3.8", no decorative serial numbers like "No. 0042"). A heading stands alone. Functional labels (chapter labels, years, locations, DRAFT/NEW/Unverified tags) are fine.
+- No horizontal scroll at any width or on any hover/focus/animation state. Hover shifts and hard shadows must never enlarge the page.
+- Images: placeholders by default. Official game imagery (icons, art) may be added by the site owner, and is always credited to Bluepoch in the footer and the loader.
 - Never invent game facts. Use only the seed content given in the prompts, or content added later through CONTENT-GUIDE.md. Unknown fields stay `null` and render as "Unverified". Anything unconfirmed is `draft: true` and shows a "DRAFT" sticker.
 - All prose (dossiers, summaries, explainers, reasons) is written in original words. Never copy sentences or distinctive phrasing from the seed notes, wikis, or community sites. The seed notes are facts to restate, not text to reuse. Opinions appear only in fields named `myTake` or `reason`.
 - All story content is `spoiler: true`.

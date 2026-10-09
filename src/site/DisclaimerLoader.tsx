@@ -86,7 +86,6 @@ export function DisclaimerLoader({ onDismiss }: DisclaimerLoaderProps) {
       <div aria-hidden="true" className="disclaimer-loader__bar disclaimer-loader__bar--top" />
       <div aria-hidden="true" className="disclaimer-loader__bar disclaimer-loader__bar--bottom" />
       <div className="disclaimer-loader__content" data-lenis-prevent>
-        <p className="disclaimer-loader__eyebrow">SUITCASE ARCHIVE · PUBLIC ACCESS TERMINAL</p>
         <h1>Before you enter</h1>
         <ol aria-live="polite" className="disclaimer-loader__lines">
           {legal.launchLines.slice(0, visibleLines).map(({ status, text }, index) => (

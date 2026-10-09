@@ -1,18 +1,37 @@
 import { legal, site } from '../data'
-import { Marquee } from '../components/ui'
+import { Link } from 'react-router-dom'
 
 export function SiteFooter() {
+  const copy = legal.footer
+  const hasGitHubUrl = Boolean(site.githubUrl)
+
   return (
     <footer className="site-footer">
-      <div className="site-footer__details">
-        <p>{legal.disclaimerLines.join(' ')}</p>
-        <p>Updated for version {site.gameVersion} · Story sections contain spoilers.</p>
+      <div className="site-footer__main">
+        <section aria-label={site.name} className="site-footer__brand">
+          <Link aria-label={`${site.name} home`} className="wordmark" to="/">
+            <span>{site.name}</span>
+          </Link>
+          <p>{copy.description}</p>
+        </section>
+        <nav aria-label={copy.navigationLabel} className="site-footer__navigation">
+          {site.footerNavigation.map(({ label, path }) => (
+            <Link key={path} to={path}>{label}</Link>
+          ))}
+          {hasGitHubUrl && (
+            <a aria-label={copy.githubAriaLabel} href={site.githubUrl} rel="noopener noreferrer" target="_blank">
+              {copy.githubLabel}
+            </a>
+          )}
+        </nav>
+        <section aria-label={copy.noticesLabel} className="site-footer__notices">
+          {copy.notices.map((notice) => <p key={notice}>{notice}</p>)}
+        </section>
       </div>
-      <Marquee className="site-footer__marquee" label="Unofficial fan-made non-commercial project">
-        <span>UNOFFICIAL</span><span aria-hidden="true"> • </span>
-        <span>FAN-MADE</span><span aria-hidden="true"> • </span>
-        <span>NON-COMMERCIAL</span>
-      </Marquee>
+      <div className="site-footer__bottom">
+        <p>{copy.createdBy} {site.creator}</p>
+        <p>{copy.updatedFor} {site.gameVersion}</p>
+      </div>
     </footer>
   )
 }

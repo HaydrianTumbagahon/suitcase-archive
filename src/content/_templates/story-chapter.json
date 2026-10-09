@@ -1,12 +1,19 @@
 {
   "id": "replace-with-lowercase-slug",
   "order": 17,
-  "arc": "Main Story: Chapters 1-13",
+  "arc": "Story arc title",
   "chapterLabel": "Chapter label",
   "title": "Replace with chapter title",
+  "headline": "Replace with editorial headline",
   "year": null,
   "location": null,
   "summary": "",
+  "critique": "",
+  "contentNotes": [],
+  "featuredNames": [
+    { "name": "Character name", "characterId": null }
+  ],
+  "otherNames": [],
   "mentions": [],
   "featuredCharacters": [],
   "spoiler": true,

@@ -10,6 +10,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "validate:data": "node scripts/validate-data.ts",
+    "check:featured": "node scripts/check-featured.ts",
     "new:character": "node scripts/add-content.ts character",
     "new:lord": "node scripts/add-content.ts lord",
     "new:event": "node scripts/add-content.ts event"

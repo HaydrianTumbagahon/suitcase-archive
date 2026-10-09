@@ -31,18 +31,39 @@ export function TeamCompositions() {
                   const name = character?.name ?? copy.unknownCharacter
                   return (
                     <Link aria-label={member.carry ? `${name} · ${copy.carryLabel}` : name} className="meta-team-card__portrait" key={member.characterId} to={`/characters/${member.characterId}`}>
-                      <SmartImage alt={`${name} portrait`} aspectRatio="3:4" label={name} src={character?.image ?? null} />
+                      <SmartImage alt={`${name} portrait`} aspectRatio="3:4" fit="contain" label={name} src={character?.image ?? null} />
                       {member.carry && <Sticker aria-label={copy.carryLabel} className="meta-team-card__carry" title={copy.carryLabel} tone="brass" tilt={0}>★</Sticker>}
                     </Link>
                   )
                 })}
               </div>
               <p className="meta-team-card__how">{team.howItWorks}</p>
+              {team.replacements.length > 0 && (
+                <div aria-label="Flexible role replacements" className="meta-team-card__replacements">
+                  <h4>{site.teamGuide.replacementGuide}</h4>
+                  {team.replacements.map((slot) => (
+                    <div className="meta-team-card__replacement" key={slot.role}>
+                      <h5>{slot.role}</h5>
+                      <p><strong>{site.teamGuide.bestLabel}:</strong> {slot.best.map((id) => characters.find((character) => character.id === id)?.name ?? copy.unknownCharacter).join(', ') || '—'}</p>
+                      <p><strong>{site.teamGuide.goodLabel}:</strong> {slot.good.map((id) => characters.find((character) => character.id === id)?.name ?? copy.unknownCharacter).join(', ') || '—'}</p>
+                      <p><strong>{site.teamGuide.acceptableLabel}:</strong> {slot.acceptable.map((id) => characters.find((character) => character.id === id)?.name ?? copy.unknownCharacter).join(', ') || '—'}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {team.notes.length > 0 && (
+                <ul className="meta-team-card__notes">
+                  {team.notes.map((note) => <li key={note}>{note}</li>)}
+                </ul>
+              )}
               <p className="meta-team-card__tier">{team.tierLabel ?? copy.tierUnrated}</p>
             </Panel>
           ))}
         </div>
         : <p className="empty-state">{copy.noTeamEntries}</p>}
+      <aside aria-label={site.teamGuide.replacementGuide} className="meta-team-guide-notes">
+        {site.teamGuide.generalNotes.map((note) => <p key={note}>{note}</p>)}
+      </aside>
     </>
   )
 }

@@ -1,9 +1,18 @@
 {
   "id": "replace-with-lowercase-slug",
   "title": "Replace with event title",
+  "headline": "Replace with editorial headline",
   "version": null,
+  "year": null,
+  "location": null,
   "tone": null,
   "summary": null,
+  "critique": "",
+  "contentNotes": [],
+  "featuredNames": [
+    { "name": "Character name", "characterId": null }
+  ],
+  "otherNames": [],
   "featuredCharacters": [],
   "mentions": [],
   "spoiler": true,

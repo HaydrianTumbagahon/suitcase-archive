@@ -4,6 +4,7 @@ import type Lenis from 'lenis'
 import { HashLink } from '../scroll/HashLink'
 import { Button } from '../components/ui'
 import { EventStories } from '../components/story/EventStories'
+import { CrossoverStories } from '../components/story/CrossoverStories'
 import { ManusCards } from '../components/story/ManusCards'
 import { StoryTimeline } from '../components/story/StoryTimeline'
 import { PageFrame } from '../site/PageFrame'
@@ -59,12 +60,12 @@ export default function StoryPage() {
       <div aria-label={copy.scrollProgressLabel} aria-valuemax={100} aria-valuemin={0} aria-valuenow={0} className="story-progress" ref={progressRef} role="progressbar">
         <div className="story-progress__bar" ref={progressBarRef} />
       </div>
-      <PageFrame scene={copy.pageScene} serial={copy.pageSerial} title={copy.pageTitle} intro={copy.intro}>
+      <PageFrame title={copy.pageTitle} intro={copy.intro}>
         <div className="story-controls">
           <nav aria-label={copy.navigationLabel} className="story-subnav">
             <HashLink to="/story#timeline">{copy.timelineNavLabel}</HashLink>
             <HashLink to="/story#event-stories">{copy.eventsNavLabel}</HashLink>
-            <HashLink to="/story#manus-vindictae">{copy.manusNavLabel}</HashLink>
+            <HashLink to="/story#crossovers">{copy.crossoversNavLabel}</HashLink>
           </nav>
           <Button aria-pressed={showAll} onClick={toggleAll} variant="secondary">
             {showAll ? copy.hideAllSpoilers : copy.showAllSpoilers}
@@ -72,7 +73,6 @@ export default function StoryPage() {
         </div>
         <section aria-labelledby="story-timeline-heading" className="story-page__section" id="timeline">
           <header className="story-page__timeline-heading">
-            <div className="scene-label">{copy.timelineScene}</div>
             <h2 id="story-timeline-heading">{copy.timelineTitle}</h2>
           </header>
           <StoryTimeline
@@ -87,8 +87,6 @@ export default function StoryPage() {
         <EventStories
           expandedFor={expandedFor}
           labels={{
-            scene: copy.eventScene,
-            sceneNumber: copy.sceneNumber,
             title: copy.eventTitle,
             revealSpoilers: copy.revealSpoilers,
             hideSpoilers: copy.hideSpoilers,
@@ -98,11 +96,20 @@ export default function StoryPage() {
           }}
           toggleSpoiler={toggleSpoiler}
         />
+        <CrossoverStories
+          expandedFor={expandedFor}
+          labels={{
+            title: copy.crossoversTitle,
+            revealSpoilers: copy.revealSpoilers,
+            hideSpoilers: copy.hideSpoilers,
+            featuredLabel: copy.featuredLabel,
+            mentionsLabel: copy.mentionsLabel,
+          }}
+          toggleSpoiler={toggleSpoiler}
+        />
         <ManusCards
           expandedFor={expandedFor}
           labels={{
-            scene: copy.manusScene,
-            sceneNumber: copy.sceneNumber,
             title: copy.manusTitle,
             revealSpoilers: copy.revealSpoilers,
             hideSpoilers: copy.hideSpoilers,

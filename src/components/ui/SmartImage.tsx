@@ -4,6 +4,7 @@ interface SmartImageProps {
   aspectRatio?: string
   label: string
   className?: string
+  fit?: 'cover' | 'contain'
 }
 
 function parseAspectRatio(aspectRatio: string) {
@@ -25,12 +26,13 @@ export function SmartImage({
   aspectRatio = '3:4',
   label,
   className = '',
+  fit = 'cover',
 }: SmartImageProps) {
   const ratio = parseAspectRatio(aspectRatio)
 
   return (
     <figure
-      className={`ui-smart-image${className ? ` ${className}` : ''}`}
+      className={`ui-smart-image ui-smart-image--${fit}${className ? ` ${className}` : ''}`}
       style={{ aspectRatio: ratio.css }}
     >
       {src ? (

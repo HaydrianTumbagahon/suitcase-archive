@@ -2,6 +2,7 @@ import characterContent from '../content/characters.json'
 import psychubeContent from '../content/psychubes.json'
 import storyContent from '../content/story.json'
 import eventContent from '../content/events.json'
+import storyEditorialContent from '../content/story-editorial.json'
 import manusContent from '../content/manus.json'
 import teamContent from '../content/teams.json'
 import tierContent from '../content/tiers.json'
@@ -9,28 +10,60 @@ import afflatusContent from '../content/afflatus.json'
 import legalContent from '../content/legal.json'
 import siteContent from '../content/site.json'
 import homeContent from '../content/home.json'
+import { selectFeaturedCharacters } from './featured'
 import type {
   AfflatusRecord,
   CharacterFilters,
   CharacterRecord,
+  CrossoverRecord,
   EventRecord,
   HomeContent,
   LegalContent,
   ManusRecord,
   PsychubeRecord,
   SiteContent,
+  StoryArc,
+  StoryEditorialContent,
+  StoryNameRef,
   StoryRecord,
   TeamRecord,
+  TierCatalog,
+  TierColumn,
   TierRecord,
+  TierScaleEntry,
 } from '../types'
 
 export const characters: CharacterRecord[] = characterContent as CharacterRecord[]
 export const psychubes: PsychubeRecord[] = psychubeContent as PsychubeRecord[]
 export const story: StoryRecord[] = storyContent as StoryRecord[]
 export const events: EventRecord[] = eventContent as EventRecord[]
+const storyEditorial = storyEditorialContent as StoryEditorialContent
+export const storyArcs: StoryArc[] = storyEditorial.arcs
+const charactersByName = new Map(
+  characters.map((character) => [normalizeCharacterName(character.name), character.id]),
+)
+
+function normalizeCharacterName(name: string) {
+  return name.normalize('NFD').replace(/\p{Diacritic}/gu, '').trim().toLocaleLowerCase()
+}
+
+function mapFeaturedNames(names: string[]): StoryNameRef[] {
+  return names.map((name) => ({
+    name,
+    characterId: charactersByName.get(normalizeCharacterName(name)) ?? null,
+  }))
+}
+
+export const crossovers: CrossoverRecord[] = storyEditorial.crossovers.map((entry) => ({
+  ...entry,
+  featuredNames: mapFeaturedNames(entry.featuredNames),
+}))
 export const manus: ManusRecord[] = manusContent as ManusRecord[]
 export const teams: TeamRecord[] = teamContent as TeamRecord[]
-export const tiers: TierRecord[] = tierContent as TierRecord[]
+const tierCatalog = tierContent as TierCatalog
+export const tiers: TierRecord[] = tierCatalog.entries
+export const tierScale: TierScaleEntry[] = tierCatalog.scale
+export const tierColumns: TierColumn[] = tierCatalog.columns
 export const afflatus: AfflatusRecord[] = afflatusContent as AfflatusRecord[]
 export const legal: LegalContent = legalContent as LegalContent
 export const site: SiteContent = siteContent as SiteContent
@@ -40,9 +73,13 @@ export function getCharacter(id: string) {
   return characters.find((character) => character.id === id)
 }
 
+export function getFeaturedCharacters(date: Date) {
+  return selectFeaturedCharacters(characters, site.featuredRotation, date)
+}
+
 export function filterCharacters(filters: CharacterFilters = {}) {
   return characters.filter((character) => (
-    (filters.afflatus === undefined || character.afflatus === filters.afflatus)
+    (filters.afflatus == null || character.afflatus?.includes(filters.afflatus))
     && (filters.damage === undefined || character.damage === filters.damage)
     && (filters.rarity === undefined || character.rarity === filters.rarity)
     && (filters.featured === undefined || character.featured === filters.featured)
@@ -62,12 +99,12 @@ function compareReleaseVersions(first: string | null, second: string | null) {
   return 0
 }
 
-const tierOrder = new Map(['S+', 'S', 'A', 'B', 'Unrated'].map((tier, index) => [tier, index]))
+const tierOrder = new Map(tierScale.map(({ id }, index) => [id, index]))
 
 export function filterAndSortCharacters(filters: CharacterFilters = {}) {
   const matches = characters.filter((character) => (
     (!filters.search || character.name.toLocaleLowerCase().includes(filters.search.trim().toLocaleLowerCase()))
-    && (filters.afflatus === undefined || character.afflatus === filters.afflatus)
+    && (filters.afflatus == null || character.afflatus?.includes(filters.afflatus))
     && (filters.damage === undefined || character.damage === filters.damage)
     && (filters.rarity === undefined || character.rarity === filters.rarity)
     && (filters.featured === undefined || character.featured === filters.featured)
@@ -121,16 +158,16 @@ export function filterTeams(archetype?: string) {
 
 export function filterTierRecords(role?: CharacterRecord['roles'][number]) {
   return tiers.filter((entry) => {
+    const character = characters.find((candidate) => candidate.id === entry.characterId)
+    const minRarity = tierScale.find((band) => band.id === entry.tier)?.minRarity
+    if (minRarity !== undefined && (character?.rarity === null || character?.rarity === undefined || character.rarity < minRarity)) return false
     if (!role) return true
-    return characters.find((character) => character.id === entry.characterId)?.roles.includes(role) ?? false
+    return character?.roles.includes(role) ?? false
   })
 }
 
 export function getChapters() {
-  return story
-    .filter((entry) => entry.arc !== 'Version 3.8 Event')
-    .slice()
-    .sort((a, b) => a.order - b.order)
+  return getStoryRecords()
 }
 
 export function getStoryRecords() {
@@ -138,7 +175,7 @@ export function getStoryRecords() {
 }
 
 export function getStoryArcs() {
-  return [...new Set(getStoryRecords().map((entry) => entry.arc))]
+  return storyArcs.map((arc) => arc.title)
 }
 
 export function filterStoryRecords(arc?: StoryRecord['arc']) {

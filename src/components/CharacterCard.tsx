@@ -1,57 +1,59 @@
 import { Link } from 'react-router-dom'
 import { site } from '../data'
 import type { CharacterRecord } from '../types'
-import { Icon, SmartImage, Sticker } from './ui'
+import { Icon, Rarity, SmartImage } from './ui'
 
 interface CharacterCardProps {
   character: CharacterRecord
 }
 
 export function CharacterCard({ character }: CharacterCardProps) {
+  const unverified = !character.dataComplete || character.rarity === null
+    || !character.afflatus?.length || character.damage === null
+  const visibleRoles = character.roles.slice(0, 3)
+  const omittedRoles = character.roles.length - visibleRoles.length
+
   return (
     <Link className="character-card" to={`/characters/${character.id}`}>
       <SmartImage
         alt={`${character.name} portrait`}
         aspectRatio="3:4"
         className="character-card__image"
+        fit="contain"
         label={`${character.name} portrait`}
         src={character.image}
       />
       <div className="character-card__details">
         <div className="character-card__heading">
           <h3>{character.name}</h3>
-          <div className="character-card__stickers">
-            {character.debutVersion === site.gameVersion && (
-              <Sticker tone="verdigris" tilt={-1}>New {site.gameVersion}</Sticker>
-            )}
-            {character.featured && <Sticker tone="brass" tilt={1}>Featured</Sticker>}
-          </div>
         </div>
-        <div className="character-card__facts">
-          <span>
-            {character.afflatus
-              ? <><Icon category="afflatus" value={character.afflatus} size={18} />{character.afflatus}</>
-              : <span className="character-card__unverified">Unverified · Afflatus</span>}
-          </span>
-          <span>
-            {character.rarity !== null
-              ? <><Icon category="rarity" value={character.rarity} size={18} />{character.rarity}-Star</>
-              : <span className="character-card__unverified">Unverified · Rarity</span>}
-          </span>
-          <span>
-            {character.damage
-              ? <><Icon category="damage" value={character.damage} size={18} />{character.damage}</>
-              : <span className="character-card__unverified">Unverified · Damage</span>}
-          </span>
+        <div aria-label="Character attributes" className="character-card__facts" role="group">
+          <Rarity value={character.rarity} />
+          <span aria-hidden="true">·</span>
+          {character.afflatus?.length
+            ? character.afflatus.map((value, index) => (
+              <span className="character-card__fact-value" key={value}>
+                {index > 0 && <span aria-hidden="true"> / </span>}
+                <Icon category="afflatus" value={value} />
+              </span>
+            ))
+            : <span className="character-card__fact-muted">Unverified</span>}
+          <span aria-hidden="true">·</span>
+          {character.damage
+            ? <Icon category="damage" value={character.damage} />
+            : <span className="character-card__fact-muted">Unverified</span>}
         </div>
-        {character.roles.length > 0 && (
-          <div aria-label="Roles" className="character-card__roles">
-            {character.roles.slice(0, 3).map((role) => (
-              <span className="character-card__role-chip" key={role}>{role}</span>
-            ))}
-          </div>
-        )}
-        {character.draft && <Sticker className="character-card__draft" tone="oxblood" tilt={-1}>Draft</Sticker>}
+        <div aria-label="Roles" className="character-card__roles" role="group">
+          {visibleRoles.map((role) => (
+            <span className="character-card__role-chip" key={role}><Icon category="role" value={role} /></span>
+          ))}
+          {omittedRoles > 0 && <span aria-label={`${omittedRoles} more roles`} className="character-card__role-chip">+{omittedRoles}</span>}
+        </div>
+        <div aria-label="Record status" className="character-card__tags">
+          {unverified && <span className="character-card__tag character-card__tag--unverified">Unverified</span>}
+          {!character.dataComplete && <span className="character-card__tag character-card__tag--unverified">Details pending</span>}
+          {character.debutVersion === site.gameVersion && <span className="character-card__tag character-card__tag--new">NEW {site.gameVersion}</span>}
+        </div>
       </div>
     </Link>
   )

@@ -4,6 +4,20 @@
     "Reverse: 1999 and all related names, characters and assets are property of Bluepoch.",
     "Not affiliated with or endorsed by Bluepoch."
   ],
+  "footer": {
+    "description": "An unofficial fan site made out of love for Reverse: 1999.",
+    "navigationLabel": "Footer navigation",
+    "noticesLabel": "Notices",
+    "githubLabel": "GitHub",
+    "githubAriaLabel": "Suitcase Archive on GitHub",
+    "notices": [
+      "Not affiliated with, endorsed by, or sponsored by Bluepoch or the game's developers. Purely fan-made, for the love of the game.",
+      "Reverse: 1999 and all related names, characters, designs, icons and images are the property of Bluepoch and their respective owners, and are credited to the developers.",
+      "Story sections contain spoilers."
+    ],
+    "createdBy": "Created by",
+    "updatedFor": "Updated for version"
+  },
   "launchLines": [
     {
       "status": "OK",
@@ -19,7 +33,7 @@
     },
     {
       "status": "OK",
-      "text": "No game assets were ripped, extracted, or copied; images are placeholders pending permission or official press material."
+      "text": "Game imagery used on this site, such as icons and character art, belongs to Bluepoch and is credited to them. Nothing here is sold, and anything can be removed on request."
     },
     {
       "status": "OK",

@@ -17,9 +17,18 @@
     "sceneLabel": "A WORLD IN REVERSE",
     "title": "The Premise",
     "entries": [
-      { "loreId": "the-storm", "title": "The Storm" },
-      { "loreId": "vertin", "title": "The Timekeeper" },
-      { "loreId": "the-suitcase", "title": "The Suitcase" }
+      {
+        "loreId": "the-storm",
+        "title": "The Storm"
+      },
+      {
+        "loreId": "vertin",
+        "title": "The Timekeeper"
+      },
+      {
+        "loreId": "the-suitcase",
+        "title": "The Suitcase"
+      }
     ]
   },
   "featured": {
@@ -27,7 +36,12 @@
     "sceneLabel": "SELECTED DOSSIERS",
     "title": "Featured arcanists",
     "countsLabel": "ARCHIVE COUNT",
-    "countLabels": ["Arcanists catalogued", "Story chapters", "Event stories", "Manus profiles"]
+    "countLabels": [
+      "Crew members catalogued",
+      "Story chapters",
+      "Event stories",
+      "Manus profiles"
+    ]
   },
   "teasers": {
     "scene": "05",

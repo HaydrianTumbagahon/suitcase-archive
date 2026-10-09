@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { characters, getCharacter, getCharacterAppearances, getPsychube, getTier, teamsFor } from '../data'
-import { Icon, Panel, SmartImage, Sticker } from '../components/ui'
+import { Icon, Panel, Rarity, SmartImage, Sticker } from '../components/ui'
 import { HashLink } from '../scroll/HashLink'
 import NotFoundPage from './NotFoundPage'
 
@@ -28,24 +28,41 @@ export default function CharacterPage() {
   return (
     <article className="character-dossier">
       <header className="character-dossier__hero">
-        <SmartImage alt={`${character.name} portrait`} aspectRatio="3:4" className="character-dossier__portrait" label={`${character.name} portrait`} src={character.image} />
+        <SmartImage alt={`${character.name} portrait`} aspectRatio="3:4" className="character-dossier__portrait" fit="contain" label={`${character.name} portrait`} src={character.image} />
         <div className="character-dossier__title">
-          <span className="scene-label">SCENE 02 — CHARACTER DOSSIER</span>
-          <p className="serial-number">RECORD / {character.id}</p>
           <h1>{character.name}</h1>
+          <div aria-label="Character attributes" className="character-dossier__summary-facts">
+            <Rarity value={character.rarity} />
+            <span aria-hidden="true">·</span>
+            {character.afflatus?.length
+              ? character.afflatus.map((value, index) => (
+                <span key={value}>
+                  {index > 0 && <span aria-hidden="true"> / </span>}
+                  <Icon category="afflatus" value={value} />
+                </span>
+              ))
+              : <span className="character-dossier__fact-muted">Unverified</span>}
+            <span aria-hidden="true">·</span>
+            {character.damage
+              ? <Icon category="damage" value={character.damage} />
+              : <span className="character-dossier__fact-muted">Unverified</span>}
+          </div>
           {character.draft && <Sticker tone="verdigris" tilt={-2}>DRAFT</Sticker>}
+          {!character.dataComplete && <Sticker tone="parchment" tilt={0}>Unverified</Sticker>}
         </div>
         <div className="character-dossier__facts">
-          <span><Icon category="rarity" value={character.rarity ?? 0} /> {character.rarity === null ? 'Unverified rarity' : `${character.rarity}★`}</span>
-          <span>{character.afflatus ? <Icon category="afflatus" value={character.afflatus} /> : null}{character.afflatus ?? 'Unverified Afflatus'}</span>
-          <span>{character.damage ? <Icon category="damage" value={character.damage} /> : null}{character.damage ?? 'Unverified damage'}</span>
           <div className="character-dossier__roles">
             {character.roles.length
-              ? character.roles.map((role) => <span className="character-dossier__role" key={role}><Icon category="role" value={role} size={16} />{role}</span>)
-              : <span className="character-meta">Roles: Unverified</span>}
+              ? <>
+                <span className="character-dossier__roles-label">Roles</span>
+                {character.roles.map((role) => <span className="character-dossier__role" key={role}><Icon category="role" value={role} /></span>)}
+              </>
+              : <><span className="character-dossier__roles-label">Roles</span><span className="character-meta">Unverified</span></>}
             <small>Role definitions unverified</small>
           </div>
-          <p><b>Debut</b> {character.debutVersion ?? 'Unverified'} · {character.debutNote ?? 'Unverified'}</p>
+          <p><b>Birthday</b> {character.birthday ?? 'Unverified'}</p>
+          <p><b>Age</b> {character.age ?? 'Unverified'}</p>
+          {!character.dataComplete && <p className="character-dossier__pending">Details pending</p>}
         </div>
       </header>
 
@@ -55,45 +72,41 @@ export default function CharacterPage() {
 
       <div className="character-dossier__content">
         <section className="character-dossier__section" id="dossier">
-          <span className="scene-label">SCENE 02.1 — DOSSIER</span>
           <h2>Dossier</h2>
-          <p>{character.dossier}</p>
+          {character.dossier
+            ? <p>{character.dossier}</p>
+            : <Panel className="character-dossier__empty-note"><p>No dossier yet</p></Panel>}
         </section>
 
         <section className="character-dossier__section" id="kit">
-          <div className="record-badges"><span className="scene-label">SCENE 02.2 — FIELD NOTES</span><Sticker tone="verdigris" tilt={1}>DRAFT</Sticker></div>
+          <div className="record-badges"><Sticker tone="verdigris" tilt={1}>DRAFT</Sticker></div>
           <h2>Kit</h2>
-          <Panel serial="01"><p>Kit details are not yet verified in this archive.</p><span className="character-meta">Unverified</span></Panel>
+          <Panel><p>Kit details are not yet verified in this archive.</p><span className="character-meta">Unverified</span></Panel>
         </section>
 
         <section className="character-dossier__section" id="build">
-          <span className="scene-label">SCENE 02.3 — EQUIPMENT</span>
           <h2>Build</h2>
           <div className="character-dossier__panels">
             {psychubes.length
-              ? psychubes.map((psychube, slot) => <Panel key={character.psychubes[slot]} serial={slot + 1}><h3>{psychube?.name ?? 'Psychube slot'}</h3><p>{psychube ? 'Recorded psychube' : 'Unverified'}</p></Panel>)
-              : <Panel serial="01"><h3>Psychube slot</h3><p>Unverified</p></Panel>}
-            {character.buildNotes.map((note, index) => <Panel key={`${index}-${note}`} serial={index + psychubes.length + 1}><p>{note}</p></Panel>)}
+              ? psychubes.map((psychube, slot) => <Panel key={character.psychubes[slot]}><h3>{psychube?.name ?? 'Psychube slot'}</h3><p>{psychube ? 'Recorded psychube' : 'Unverified'}</p></Panel>)
+              : <Panel><h3>Psychube slot</h3><p>Unverified</p></Panel>}
+            {character.buildNotes.map((note, index) => <Panel key={`${index}-${note}`}><p>{note}</p></Panel>)}
           </div>
         </section>
 
         <section className="character-dossier__section" id="teams">
-          <span className="scene-label">SCENE 02.4 — COMPANY</span>
           <h2>Teams</h2>
           {memberTeams.length
             ? <div className="character-dossier__panels">{memberTeams.map((team) => <Panel key={team.id}><h3>{team.name}</h3><p>{team.explainer}</p><span className="character-meta">{team.tierLabel ?? 'Unverified'} · {team.gameVersion}</span></Panel>)}</div>
             : <Panel><p>No team records are filed for this character.</p><span className="character-meta">Unverified</span></Panel>}
         </section>
-
         <section className="character-dossier__section" id="verdict">
-          <span className="scene-label">SCENE 02.5 — PERSONAL NOTES</span>
           <h2>My Verdict</h2>
           <Panel><p className="character-dossier__tier">{tier?.tier ?? 'Unverified'}</p><p>{tier?.reason ?? 'No personal tier assessment is filed for this character.'}</p>{tier?.draft && <Sticker tone="verdigris" tilt={-1}>DRAFT</Sticker>}</Panel>
         </section>
 
         {appearances.length > 0 && (
           <section className="character-dossier__section" aria-labelledby="seen-in-heading">
-            <span className="scene-label">SCENE 02.6 — CROSS-REFERENCES</span>
             <h2 id="seen-in-heading">Seen In</h2>
             <ul className="team-reference-list">{appearances.map((entry) => <li key={entry.id}><Link to={`/story#${entry.id}`}><span className="character-meta">{entry.kind} · {entry.label}</span> — {entry.title}</Link></li>)}</ul>
           </section>

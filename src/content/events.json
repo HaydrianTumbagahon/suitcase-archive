@@ -1,11 +1,689 @@
 [
-  {"id":"the-theft-of-the-rimet-cup","title":"The Theft of the Rimet Cup","version":null,"tone":"Light, with a heist-like air","summary":"Melania is named among the characters in this lighter caper. Diggers is also involved, though he is not part of the seeded roster.","featuredCharacters":["melania"],"mentions":["Diggers"],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"a-nightmare-at-green-lake","title":"A Nightmare at Green Lake","version":null,"tone":"Atmospheric horror","summary":"The event is noted for an atmosphere of horror. Further plot particulars have not been supplied.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"journey-to-mor-pankh","title":"Journey to Mor Pankh","version":null,"tone":null,"summary":"This event lays groundwork for threads that continue later. Further particulars remain unverified.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"farewell-rayashki","title":"Farewell, Rayashki","version":null,"tone":"Quiet and restrained","summary":"The side story is framed as an understated, emotional farewell. More detail has not been supplied.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"floor-it-to-the-golden-city","title":"Floor It! To the Golden City + Route 77: The Haunted Highway","version":null,"tone":"Road-trip energy giving way to dread","summary":"The paired road stories begin with a road-trip feel and grow more ominous. Their background matters from Chapter 8 onward.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"a-flowing-feast","title":"A Flowing Feast","version":"3.2","tone":null,"summary":"The event brings several higher Lords into view. It also lays out threads around the Syndrome of Silence.","featuredCharacters":[],"mentions":["Taira"],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"the-turquoise-serpent-club","title":"The Turquoise Serpent Club","version":"3.5","tone":null,"summary":"The story adds depth to the internal politics of Manus Vindictae. Older mysteries also gain further context.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"last-and-first-principles","title":"Last and First Principles","version":"3.6","tone":null,"summary":"This event continues the threads of Manus internal politics and older mysteries. Further particulars remain unverified.","featuredCharacters":[],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":null},
-  {"id":"the-temporal-scale","title":"The Temporal Scale","version":"3.8","tone":null,"summary":null,"featuredCharacters":["everecho"],"mentions":[],"spoiler":true,"draft":true,"image":null,"storyId":"version-3-8-the-temporal-scale"}
+  {
+    "id": "the-theft-of-the-rimet-cup",
+    "title": "The Theft of the Rimet Cup",
+    "headline": "A Heist With Good Manners and Bad Security",
+    "year": 1966,
+    "location": "London",
+    "tone": "Comedic caper",
+    "summary": "March 1966, London. The Rimet Cup, football's highest honour, is on show in a museum guarded by Iverson, head of New Humans Security, and his fleet of semi-autonomous robots, which he swears are programmed against every method a thief could try. The display draws four Arcanists with four agendas. Diggers, a hippie with bubble-based psychedelics, sees a stage for his art and his ideals of peace and freedom. Melania Ramirez, a student who moonlights as the Great Thief Acey, wants the cup as revenge on Iverson, who humiliated her father and ruined his security firm. Pickles, a hyper-intelligent dog dragged along by Mr. Charlton and the other pets, would rather read philosophy. And Regulus, convinced the robots are part of a Manus plot, sets out to sabotage them. Iverson fights to hold the exhibit, even unlocking lethal ammunition for his robots, but Melania pulls off the theft, and leaves the cup where Pickles will later be credited with saving it for the World Cup.",
+    "critique": "Joyful and well-balanced, with a rotating cast of motives that never get in each other's way. The final gag, a dog taking credit for a theft, is the right size of joke.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Melania",
+        "characterId": "melania"
+      },
+      {
+        "name": "Pickles",
+        "characterId": "pickles"
+      },
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "Diggers",
+        "characterId": "diggers"
+      }
+    ],
+    "otherNames": [
+      "Iverson",
+      "Mr. Charlton"
+    ],
+    "featuredCharacters": [
+      "melania",
+      "pickles",
+      "regulus",
+      "diggers"
+    ],
+    "mentions": [
+      "Iverson",
+      "Mr. Charlton"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "a-nightmare-at-green-lake",
+    "title": "A Nightmare at Green Lake",
+    "headline": "Slasher Rules, Arcanist Edition",
+    "year": null,
+    "location": "Green Lake campsite",
+    "tone": "Horror",
+    "summary": "Horropedia, a young Foundation field agent, convinces Vertin, Sonetto and Tooth Fairy to visit the Green Lake campsite, once a summer camp and training ground for Zeno Armaments recruits until everyone mysteriously vanished in the early 1970s. A group of college students is there shooting their own slasher movie. As night falls and a thunderstorm settles in, a strange butcher starts killing the students one by one, following the scripts of famous horror films. The Arcanists have to cooperate to stop the killer and solve the mystery of Green Lake before nobody is left to tell it.",
+    "critique": "A genre exercise that works because it knows the rules it is breaking: the killer follows film scripts, so the investigators can read the genre as a map.",
+    "contentNotes": [
+      "Horror violence"
+    ],
+    "featuredNames": [
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      },
+      {
+        "name": "Tooth Fairy",
+        "characterId": "tooth-fairy"
+      },
+      {
+        "name": "Horropedia",
+        "characterId": "horropedia"
+      }
+    ],
+    "otherNames": [
+      "Vertin"
+    ],
+    "featuredCharacters": [
+      "sonetto",
+      "tooth-fairy",
+      "horropedia"
+    ],
+    "mentions": [
+      "Vertin"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "journey-to-mor-pankh",
+    "title": "Journey to Mor Pankh",
+    "headline": "A Festival, a Mentor and a Ticking Clock",
+    "year": null,
+    "location": "A village in 1960s India",
+    "tone": "Adventure",
+    "summary": "With the Dipa Festival close, astrologer Kaalaa Baunaa has to find her old mentor, Kumar, before she brings destruction down on the village and everyone in it in the name of Manus Vindictae. Helping her evacuate the town are her old friend Shamane, a snake-charming thief named Kanjira, and the Foundation's Matilda, who arrived for unrelated reasons.",
+    "critique": "A mentor-turned-threat story with a festival as the countdown, and a tidy ensemble that gives each ally a job.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Kaalaa Baunaa",
+        "characterId": "kaalaa-baunaa"
+      },
+      {
+        "name": "Matilda",
+        "characterId": "matilda"
+      }
+    ],
+    "otherNames": [
+      "Kumar",
+      "Shamane",
+      "Kanjira"
+    ],
+    "featuredCharacters": [
+      "kaalaa-baunaa",
+      "matilda"
+    ],
+    "mentions": [
+      "Kumar",
+      "Shamane",
+      "Kanjira"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-revival-the-uluru-games",
+    "title": "Revival! The Uluru Games",
+    "headline": "A Girl Made of Heat",
+    "year": null,
+    "location": "Australia, 1990s",
+    "tone": "Sports drama",
+    "summary": "In 1990s Australia, a young boxer named Spathodea begins to change fast, literally bursting with heat as the spirit of the Ulu flame wakes inside her. Vertin and Ezra try to help while Spathodea travels to Uluru Rock to restart the Uluru Games, a mini-Olympics where Arcanists could compete openly until World War II ended them. Her friend Desert Flannel tries to support her, but a scorned paparazzo's actions draw Bunyips, creatures that feed on lies, and threaten to sabotage the Games before they begin.",
+    "critique": "The metaphor is plain and effective: a body that cannot contain a gift, and a media cycle that feeds a monster. Sports stories live on their stakes, and here the stakes are public truth.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Spathodea",
+        "characterId": "spathodea"
+      },
+      {
+        "name": "Ezra",
+        "characterId": "ezra"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Desert Flannel"
+    ],
+    "featuredCharacters": [
+      "spathodea",
+      "ezra"
+    ],
+    "mentions": [
+      "Vertin",
+      "Desert Flannel"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-notes-on-shuori",
+    "title": "Notes on Shuori",
+    "headline": "A City That Appears on Demand",
+    "year": null,
+    "location": "The Russian steppes and Pei City",
+    "tone": "Fantasy journey",
+    "summary": "Russian Arcanist Yenisei and blind researcher Bessmert trek across the steppes in search of a powerful arcana called 'Ask and Acquire'. Thrown off course by weather and strange sights, the rest of their team wants to turn back and starts a mutiny. Before they can hurt the two women, the team transforms into wild horses and is led off by a man with the body of a bird. Yenisei and Bessmert find Pei City, an ancient Chinese city that appears from nowhere, hoping to find the bird-man and rescue their transformed colleagues.",
+    "critique": "Travelogue meets folktale: the premise is a quest, and the transformation of the mutineers into horses is a neat, wry consequence for those who wanted to quit.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Yenisei",
+        "characterId": "yenisei"
+      }
+    ],
+    "otherNames": [
+      "Bessmert"
+    ],
+    "featuredCharacters": [
+      "yenisei"
+    ],
+    "mentions": [
+      "Bessmert"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "farewell-rayashki",
+    "title": "Farewell, Rayashki",
+    "headline": "A Colony Offered Two Bad Choices",
+    "year": null,
+    "location": "Rayashki, Arctic Circle near Russia",
+    "tone": "Quiet drama",
+    "summary": "In the Arctic Circle near Russia sits an isolated colony called Rayashki, supported for decades by the Zeno Arms Academy in return for mining Runium, a metal vital to magical military vehicles. Now the mines are running dry, critters are spreading and endangering both the operation and the residents, and Zeno, watching costs climb and margins fall, is losing interest. A Zeno delegation arrives and, instead of investing in new infrastructure and exploration, offers two options: leave home and work for Zeno, with the old, sick and young left to Zeno's social services, or turn Rayashki into a military outpost and give up autonomy. Vila, a half-human, half-Rusalka Arcanist, searches for a way to stop Zeno and keep Rayashki independent. One of her students, Avgust, meets researcher Windsong, who tells them about a possible 'limitless source of energy' in Rayashki. With the Zeno delegation pressing for surrender and Chief Security Officer Evgeni's well-meaning but cynical opposition, the residents pull together to try to avoid saying goodbye to their home.",
+    "critique": "A story about corporate attrition rather than a villain, and all the better for it: nobody here is cruel, only indifferent, which makes the colony's stand harder to dismiss.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Vila",
+        "characterId": "vila"
+      },
+      {
+        "name": "Avgust",
+        "characterId": "avgust"
+      },
+      {
+        "name": "Windsong",
+        "characterId": "windsong"
+      }
+    ],
+    "otherNames": [
+      "Evgeni"
+    ],
+    "featuredCharacters": [
+      "vila",
+      "avgust",
+      "windsong"
+    ],
+    "mentions": [
+      "Evgeni"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-floor-it-to-the-golden-city",
+    "title": "Floor It! To the Golden City",
+    "headline": "A Brother, a Key and a Dead Sister",
+    "year": 1990,
+    "location": "San Francisco, 1990s",
+    "tone": "Road thriller",
+    "summary": "In 1990s San Francisco, Joe, known as J, visits his long-lost sister Paulina at the Foundation, and is told she is dead; his last memory of her is a bitter argument over joining the Foundation. Before he can absorb it, he is pulled into a conspiracy involving surviving Manus Vindictae members who have set up in the New Age Market. With help from a young thief who stole their key, and the Foundation's Matilda, who arrived on other business, J and his crew get a chance to stop Apostle Matheus and his followers before their ritual is complete.",
+    "critique": "Grief as an engine: the plot is a heist-shaped excuse for a man to process a quarrel that can no longer be resolved.",
+    "contentNotes": [
+      "Bereavement"
+    ],
+    "featuredNames": [
+      {
+        "name": "J",
+        "characterId": "j"
+      },
+      {
+        "name": "Matilda",
+        "characterId": "matilda"
+      }
+    ],
+    "otherNames": [
+      "Paulina",
+      "Apostle Matheus"
+    ],
+    "featuredCharacters": [
+      "j",
+      "matilda"
+    ],
+    "mentions": [
+      "Paulina",
+      "Apostle Matheus"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "floor-it-to-the-golden-city",
+    "title": "Route 77: The Haunted Highway",
+    "headline": "A Motel With a Pulse",
+    "year": 1990,
+    "location": "Texas, 1990s",
+    "tone": "Mystery horror",
+    "summary": "In 1990s Texas, bounty hunter Argus and the Timekeeper arrive separately at Tuesday's Motel, each hunting different people and each given a room by Tuesday after being stranded near Route 77. The guests are an odd lot: Tuesday herself, the owner and maid; Ms. Kimberly, refined and hungry; and Stefan, who holds a grudge against Vertin over Arcana's death. While Lilya tries to retrieve her repaired broom from a nearby Zeno base, Argus and Vertin uncover the motel's secrets. Stefan is found dead, having shot himself with a Zeno-made pistol, Ms. Kimberly proves to be the same Manus Vindictae agent Matilda met near San Francisco, and the motel itself turns out to have a beating heart.",
+    "critique": "A locked-building mystery with a supernatural reveal that turns the setting into a character; the motel's heartbeat is the right kind of final twist.",
+    "contentNotes": [
+      "Suicide (reported, off-page)"
+    ],
+    "featuredNames": [
+      {
+        "name": "Argus",
+        "characterId": "argus"
+      },
+      {
+        "name": "Tuesday",
+        "characterId": "tuesday"
+      },
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Ms. Kimberly",
+      "Stefan"
+    ],
+    "featuredCharacters": [
+      "argus",
+      "tuesday",
+      "lilya"
+    ],
+    "mentions": [
+      "Vertin",
+      "Ms. Kimberly",
+      "Stefan"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-london-dawning",
+    "title": "Chronicles of Uluru: London Dawning",
+    "headline": "Black Fog Over the East End",
+    "year": 1930,
+    "location": "London, 1930s",
+    "tone": "Mystery",
+    "summary": "Tooth Fairy is sent to 1930s London to meet Mr. Fog, as the city's fog has turned black and begun infecting humans and Arcanists alike with tuberculosis. Meanwhile the Arcanists of Cross Street in the East End prepare for their Uluru Qualifiers, with vendors and entertainers hoping to profit. As the Londoners try to ignore the black fog and carry on, some Arcanists blame a 'Fog Hag', treating it as a curse rather than a bacterium. As the sickness persists and threatens to cancel the qualifiers, Tooth Fairy and her allies try to meet the so-called Hag, a former Floor Ritualist with a prosthetic leg, and track down the true source of the fog.",
+    "critique": "Superstition against science as a community drama, with a scapegoat figure whose reality is likely to be more sympathetic than her reputation.",
+    "contentNotes": [
+      "Illness"
+    ],
+    "featuredNames": [
+      {
+        "name": "Tooth Fairy",
+        "characterId": "tooth-fairy"
+      }
+    ],
+    "otherNames": [
+      "Mr. Fog",
+      "Fog Hag"
+    ],
+    "featuredCharacters": [
+      "tooth-fairy"
+    ],
+    "mentions": [
+      "Mr. Fog",
+      "Fog Hag"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-last-evenings-on-earth",
+    "title": "Last Evenings on Earth",
+    "headline": "A Cruise Ship and an Artificial Storm",
+    "year": null,
+    "location": "Aboard the Free Breeze, off Australia",
+    "tone": "Thriller",
+    "summary": "After the São Paulo events, Regulus and Vertin board a cruise ship off the Australian coast, the Free Breeze. Regulus and Ulrich are testing an 'artificial Storm' with a unique record, also called 'Regulus', while Vertin suspects the remnants of Manus Vindictae have taken the ship for some unknown purpose. Elsewhere, Ms. Grace tries to use the chaos to persuade the Nukutai people to join Manus Vindictae.",
+    "critique": "A bridging story that carries the plot between chapters and plants the idea that the Storm might be manufactured.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "Ulrich",
+        "characterId": "ulrich"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Ms. Grace"
+    ],
+    "featuredCharacters": [
+      "regulus",
+      "ulrich"
+    ],
+    "mentions": [
+      "Vertin",
+      "Ms. Grace"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-showdown-in-chinatown",
+    "title": "Showdown in Chinatown",
+    "headline": "A Rookie, a Sergeant and a Vigilante",
+    "year": 1990,
+    "location": "Los Angeles, 1990s",
+    "tone": "Buddy-cop mystery",
+    "summary": "In 1990s Los Angeles, a special LAPD unit that handles Arcanist crime pairs Sergeant Poitier with a rookie Vigil from the Foundation, Liang Yue. Poitier is sceptical at first and warms as she helps defuse tense moments across Chinatown. Then comes their biggest case. Hong Kong director Noire is in town filming her next movie, a vigilante called the Nightpiercer is killing people judged to have escaped punishment, using techniques from Detective C07, the heroine of Noire's earlier trilogy, and a reel of test footage has vanished from the Foundation's vault of arcane objects, possibly linked to Noire. Can Liang Yue find the Nightpiercer before Noire is added to the list?",
+    "critique": "Genre pastiche with a clever hook: a killer whose methods come from fiction, and a director whose fiction becomes evidence.",
+    "contentNotes": [
+      "Murder"
+    ],
+    "featuredNames": [
+      {
+        "name": "Liang Yue",
+        "characterId": "liang-yue"
+      }
+    ],
+    "otherNames": [
+      "Sergeant Poitier",
+      "Noire",
+      "The Nightpiercer"
+    ],
+    "featuredCharacters": [
+      "liang-yue"
+    ],
+    "mentions": [
+      "Sergeant Poitier",
+      "Noire",
+      "The Nightpiercer"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-1987-cosmic-overture",
+    "title": "1987: Cosmic Overture",
+    "headline": "One Last Launch",
+    "year": 1987,
+    "location": "Plesetsk, Russia",
+    "tone": "Space drama",
+    "summary": "Plesetsk, 1987. With Laplace cutting funding for the Russian cosmodrome, Hissabeth and Pointer make one last desperate attempt to send an Arcanist into space to watch the Storm from a place it supposedly cannot touch but can be studied. Windsong directs the pair to an acrobat named Kiperina, who seems to meet every requirement for an astronaut recruit, Name Day arrives to help, and a mysterious mute girl who calls herself Voyager joins the troupe for reasons unknown.",
+    "critique": "A story about the end of a funding line and the beginning of something stranger, with a silent newcomer as its open question.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Windsong",
+        "characterId": "windsong"
+      },
+      {
+        "name": "Voyager",
+        "characterId": "voyager"
+      }
+    ],
+    "otherNames": [
+      "Hissabeth",
+      "Pointer",
+      "Kiperina",
+      "Name Day"
+    ],
+    "featuredCharacters": [
+      "windsong",
+      "voyager"
+    ],
+    "mentions": [
+      "Hissabeth",
+      "Pointer",
+      "Kiperina",
+      "Name Day"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "ev-the-midnight-whistle",
+    "title": "The Midnight Whistle",
+    "headline": "A Train Out of the War",
+    "year": null,
+    "location": "The Danube Dawn, a train in wartime Europe",
+    "tone": "Mystery",
+    "summary": "Crowds try to board a train, the Danube Dawn, to escape the ravages of the Great War. It is run by a stern conductress named Corvus, who has no patience for bribes, begging or threats from those without tickets. One passenger, Semmelweis, has been sent by the Foundation to find out whether a vampire is on board and to stop it. Semmelweis takes pity on a red-eyed girl named Rubuska and lets her on in place of an absent investigator. Despite its reputation as a safe haven for paying refugees, the train soon holds mysteries Semmelweis did not expect, among them the wild card Rubuska, who says she is a vampire but is an Arcanist of a different kind.",
+    "critique": "The closed train is a reliable stage, and here it carries a good reversal: the supposed monster turns out to be a different category of problem.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Semmelweis",
+        "characterId": "semmelweis"
+      }
+    ],
+    "otherNames": [
+      "Corvus",
+      "Rubuska"
+    ],
+    "featuredCharacters": [
+      "semmelweis"
+    ],
+    "mentions": [
+      "Corvus",
+      "Rubuska"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "a-flowing-feast",
+    "title": "A Flowing Feast",
+    "headline": "A Diamond, a Diviner and a City Losing Its Mind",
+    "year": 1930,
+    "location": "Paris, 1930s",
+    "tone": "Psychological mystery",
+    "summary": "The Vigiles Bureau questions Adele Tavernier, an Arcanist and Paris taxi driver of the 1930s, about the events leading up to the Storm and the whereabouts of Beryl Bouanich, a diviner the Foundation considers a major person of interest. Adele uses her arcane skill and her tiny dragon, Feufeu, to expose fake diviners between fares. A regular customer, the wealthy Félicienne, asks her to visit Beryl, which Adele cannot do. Then she stumbles across Beryl's shop on her own and acquires the French Blue, a diamond thought lost since the French Revolution, while receiving visions of a university friend telling her not to give it to anyone. Meanwhile the city's streets are going mad: residents argue about the Bourbons and the Paris Commune, others report the Beasts of Gévaudan eating people in the street, and Félicienne keeps appearing and vanishing in Adele's visions. Professor Roseau insists it is all in her head, while Adele struggles to keep hold of herself, and to tell reality from delusion, as the Manus make their move in Paris.",
+    "critique": "An interrogation frame gives the story an unreliable narrator, and Paris itself becomes the haunted object. The tension between a professor's rationalism and a city's collective hallucination is the story's real argument.",
+    "contentNotes": [
+      "Delusion and paranoia themes"
+    ],
+    "featuredNames": [
+      {
+        "name": "Beryl",
+        "characterId": "beryl"
+      }
+    ],
+    "otherNames": [
+      "Adele Tavernier",
+      "Feufeu",
+      "Félicienne",
+      "Professor Roseau"
+    ],
+    "featuredCharacters": [
+      "beryl"
+    ],
+    "mentions": [
+      "Adele Tavernier",
+      "Feufeu",
+      "Félicienne",
+      "Professor Roseau"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null,
+    "version": "3.2"
+  },
+  {
+    "id": "ev-spring-unending",
+    "title": "Spring Unending",
+    "headline": "A Reporter in Search of Longer Life",
+    "year": null,
+    "location": "Zhu County, China",
+    "tone": "Mythic mystery",
+    "summary": "Reed, a UTTU reporter and a personified Yao, follows a rumour from an online chatroom to China, looking for Zhu County and the Method of Longevity. No one in the town seems to know of either. Partly for the story and partly to extend her own short lifespan, Reed walks every inch of the town until one night her memory is carried back to ancient times, where she witnesses the tale of the apparently immortal Paper Heron, a grass-like Yao named Mayfly, and the School of Mei, which sought the same Method of Longevity she is chasing.",
+    "critique": "A story about mortality told through a short-lived protagonist, with the ancient flashback giving the present-day search a mirror.",
+    "contentNotes": [],
+    "featuredNames": [],
+    "otherNames": [
+      "Reed",
+      "Paper Heron",
+      "Mayfly"
+    ],
+    "featuredCharacters": [],
+    "mentions": [
+      "Reed",
+      "Paper Heron",
+      "Mayfly"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null
+  },
+  {
+    "id": "the-turquoise-serpent-club",
+    "title": "The Turquoise Serpent Club",
+    "headline": "A Grave Keeper, a Pigment and a Secret Party",
+    "year": null,
+    "location": "Mexico City",
+    "tone": "Investigation",
+    "summary": "Foundation agent Loggerhead investigates Manus Vindictae activity in Mexico City. The Vigiles Bureau resents her presence but directs her to a grave keeper named Ramona, who reluctantly agrees to work with her. Meanwhile, the enigmatic Lorentz Butterfly is chasing an Arcane power source hidden in an unusual pigment. Both lines of inquiry lead to a secretive gathering, the Turquoise Serpent Club, hosted by a criminal known only as Senor Perez.",
+    "critique": "A convergent plot: two investigations from different directions meeting at one invitation-only door.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Loggerhead",
+        "characterId": "loggerhead"
+      },
+      {
+        "name": "Ramona",
+        "characterId": "ramona"
+      },
+      {
+        "name": "Lorentz Butterfly",
+        "characterId": "lorentz-butterfly"
+      }
+    ],
+    "otherNames": [
+      "Senor Perez"
+    ],
+    "featuredCharacters": [
+      "loggerhead",
+      "ramona",
+      "lorentz-butterfly"
+    ],
+    "mentions": [
+      "Senor Perez"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null,
+    "version": "3.5"
+  },
+  {
+    "id": "last-and-first-principles",
+    "title": "Last and First Principles",
+    "headline": "The Director Who Needs a Protocol",
+    "year": null,
+    "location": "Laplace Scientific Computing Center",
+    "tone": "Workplace drama",
+    "summary": "Enigma, co-Acting Director of the LSCC, is exhausted on several fronts: the Foundation wants to install its own Director after Lucy's departure, the paperwork and requests never end, several researchers are demanding his attention, and the death of his sister Greta still weighs on him. On top of this, Madam Z asks him for a 'Pre-Storm Protocol' to prove he deserves the full-time Directorship before the Foundation's patience runs out and she can no longer placate the other board members. With few options left, and while pushing away suicidal thoughts, Enigma calls on fellow Laplace researchers Ulrich, Marcus and Medicine Pocket to re-enter Musae III's Toybox and unlock its source in order to finish a Pre-Storm Protocol report.",
+    "critique": "An unglamorous premise, burnout in a bureaucracy, which gives Enigma more interiority than any battle would. The Toybox is a fitting setting for a man who has been working inside a puzzle for too long.",
+    "contentNotes": [
+      "Suicidal ideation (brief)",
+      "Grief"
+    ],
+    "featuredNames": [
+      {
+        "name": "Enigma",
+        "characterId": "enigma"
+      },
+      {
+        "name": "Ulrich",
+        "characterId": "ulrich"
+      },
+      {
+        "name": "Marcus",
+        "characterId": "marcus"
+      },
+      {
+        "name": "Medicine Pocket",
+        "characterId": "medicine-pocket"
+      }
+    ],
+    "otherNames": [
+      "Madam Z",
+      "Greta",
+      "Musae III"
+    ],
+    "featuredCharacters": [
+      "enigma",
+      "ulrich",
+      "marcus",
+      "medicine-pocket"
+    ],
+    "mentions": [
+      "Madam Z",
+      "Greta",
+      "Musae III"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null,
+    "version": "3.6"
+  },
+  {
+    "id": "the-temporal-scale",
+    "title": "The Temporal Scale",
+    "headline": "Ruins That Keep Their Memories",
+    "year": null,
+    "location": "Collapsed buildings in Eastern Europe",
+    "tone": "Reflective",
+    "summary": "Collapsed buildings in Eastern Europe still hold memories, and architects and supervisors walk through the ruins as the rubble refuses to stay silent. It is a quieter event than Chapter 13 and, in some ways, a heavier one: less about large battles than about what remains after the Storm has passed. Everecho's character story, 'A Fledgling's Brave Fall', is set inside this event.",
+    "critique": "A deliberately small story after a large one. Where Chapter 13 asks what the cast will carry, this asks what the rubble remembers.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Everecho",
+        "characterId": "everecho"
+      }
+    ],
+    "otherNames": [],
+    "featuredCharacters": [
+      "everecho"
+    ],
+    "mentions": [],
+    "spoiler": true,
+    "draft": true,
+    "image": null,
+    "storyId": null,
+    "version": "3.8"
+  }
 ]

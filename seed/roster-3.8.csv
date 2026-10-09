@@ -1,0 +1,138 @@
+id,name,rarity,afflatus,damage,roles,birthday,age,dataComplete
+37,37,6,Star,Mental,DPS|Follow-up Attack|Support,July 27,16,true
+6,6,6,Intellect,Mental,Support|Debuff|Purify,February 13,22,true
+a-knight,A Knight,6,Spirit,Reality,DPS,February 29,Unknown,true
+apple,APPLe,4,Star,Mental,DPS|Heal,January 4,Unknown,true
+aleph,Aleph,6,Intellect,Mental,Support|Inspiration|Burst DMG,February 28,29,true
+alexios,Alexios,5,Beast,Reality,Assassination|DPS,August 7,20,true
+alien-t,AliEn T,3,Star,Reality,DPS|Control,July 10,Unknown,true
+an-an-lee,An-an Lee,6,Plant,Reality,Support|Control|DPS,July 27,16,true
+anjo-nala,Anjo Nala,6,Beast,Mental,DPS|Control|Burst DMG,April 5,Unknown,true
+argus,Argus,6,Plant,Reality,DPS|Debuff|Support,December 11,26,true
+avgust,Avgust,5,Plant,Mental,DPS|Dispeller|Heal,August 7,8,true
+baby-blue,Baby Blue,5,Star,Mental,Control|Debuff,March 14,17,true
+balloon-party,Balloon Party,5,Mineral,Reality,Heal|DEF,April 14,17,true
+barbara,Barbara,5,Spirit,Mental,Support|Shield|Heal,July 5,Unknown,true
+barcarola,Barcarola,6,Star,Mental,DPS|Support|Inspiration,November 13,17,true
+beryl,Beryl,6,Intellect,Mental,DPS|Lingering Glow|Extra Action,December 21,Unknown,true
+bette,Bette,3,Mineral,Reality,Shield|Support,June 22,20,true
+bkornblume,Bkornblume,5,Plant,Reality,Debuff|Burst DMG|Control,February 9,18,true
+blonney,Blonney,5,Star,Reality,Burst DMG|DPS,July 22,20,true
+brimley,Brimley,5,Mineral,Mental,Support|Dispeller|Extra Action,October 31,Unknown,true
+brume,Brume,6,Beast,Mental,DPS|Extra Action|Dynamo,December 19,20,true
+buddy-fairchild,Buddy Fairchild,5,Plant,Reality,DPS|Ritual,May 20,5,true
+bunny-bunny,Bunny Bunny,4,Beast,Reality,Heal|Remove Debuffs,November 6,21,true
+centurion,Centurion,6,Beast,Reality,DPS|Burst DMG,August 13,19,true
+charlie,Charlie,5,Star,Mental,DPS|Dispeller,April 23,16,true
+charon,Charon,6,Spirit,Mental,Dynamo|Support|Extra Action,June 27,2,true
+cheng-heguang,Cheng Heguang,6,Star,Reality,DPS|Follow-up Attack|Support,July 3,22,true
+click,Click,5,Spirit,Mental,DPS|Debuff,June 28,19,true
+coppelia,Coppélia,6,Mineral,Reality,DPS|Conduit|Support,April 11,17,true
+cornerstone,Cornerstone,6,Mineral,Reality,,February 9,28,false
+corvus,Corvus,6,Intellect,Mental,DPS|Extra Action|Dynamo,August 2,34,true
+cristallo,Cristallo,4,Mineral,Reality,Support,December 30,16,true
+darley-clatter,Darley Clatter,3,Beast,Mental,Support,January 19,Unknown,true
+desert-flannel,Desert Flannel,5,Beast,Reality,Support|DPS,September 22,17,true
+diggers,Diggers,5,Plant,Mental,Control|Shield|Debuff,February 15,20,true
+dikke,Dikke,5,Beast,Mental,DPS|Heal,October 10,19,true
+door,Door,2,Intellect,Reality,Support,August 2,Unknown,true
+druvis-iii,Druvis III,6,Plant,Mental,DPS|Control|Support,October 23,20,true
+eagle,Eagle,4,Plant,Reality,Burst DMG|DPS,July 21,13,true
+enigma,Enigma,6,Intellect,Reality,Shield|Dynamo|Support|Array,October 16,29,true
+erick,Erick,4,Star,Reality,DPS|Dispeller,May 14,12,true
+eternity,Eternity,6,Mineral,Reality,DPS|Nasty Wound,December 25,100+,true
+everecho,Everecho,6,Mineral,Reality,Heal|Conduit|Support,April 16,Unknown,true
+ezio-auditore,Ezio Auditore,6,Star,Reality,Assassination|DPS|Riposte,June 24,34,true
+ezra,Ezra,6,Star,Mental,Support|Shield|Debuff,June 1,14,true
+fatutu,Fatutu,6,Mineral,Mental,Heal|Dispeller|Extra Action,September 28,16,true
+flutterpage,Flutterpage,6,Star,Reality,DPS|Support|Extra Action,July 14,11,true
+getian,Getian,6,Beast,Reality,Support|Debuff|DPS,July 22,Unknown,true
+glyndwr,Glyndŵr,4,,,,,,false
+hedone,Hedone,6,Mineral,Reality,,August 8,,false
+hissabeth,Hissabeth,6,Plant,Mental,DPS|Control|Moxie,December 23,19,true
+horropedia,Horropedia,5,Mineral,Mental,DPS|Dispeller|Debuff,January 3,21,true
+huntsworn-lilya,Huntsworn Lilya,6,Star,,,,,false
+igor,Igor,6,Beast,Reality,DPS,February 23,56,true
+isolde,Isolde,6,Spirit,Reality,Support|DPS|Burn,November 23,18,true
+j,J,6,Beast,Reality,DPS|Shield|Riposte,April 18,18,true
+jessica,Jessica,6,Plant,Reality,Poison|DPS,April 11,27,true
+jiu-niangzi,Jiu Niangzi,6,Mineral,Reality,DPS|Burst DMG|Extra Action,February 10,Unknown,true
+john-titor,John Titor,3,Intellect,Reality,Shield|Remove Debuffs|Remove Buffs,November 2,18,true
+kaalaa-baunaa,Kaalaa Baunaa,6,Mineral,Mental,DPS|Burst DMG|Follow-up Attack,July 15,27,true
+kakania,Kakania,6,Plant,Mental,Support|DEF|Burst DMG,December 7,19,true
+kanjira,Kanjira,5,Plant,Mental,DPS|Poison|Debuff,April 8,16,true
+kassandra,Kassandra,6,Mineral,Reality,Assassination|DPS|Support,August 7,27,true
+kiperina,Kiperina,6,Star,Reality,Shield|Support|Dispeller,April 19,15,true
+la-source,La Source,3,Plant,Mental,Heal,January 29,Unknown,true
+lady-by-the-lake,Lady by the Lake,4,Plant,Mental,DPS|Support,April 7,93,true
+leilani,Leilani,3,Beast,Reality,Support|DPS,September 23,16,true
+liang-yue,Liang Yue,6,Star,Reality,DPS|Extra Action|Immunity,May 6,17,true
+lilya,Lilya,6,Star,Reality,Burst DMG|DPS,November 14,Unknown,true
+loggerhead,Loggerhead,5,Plant,Mental,Heal|DEF|Support,June 1,96,true
+lopera,Lopera,6,Beast,Reality,Support|Burn|Extra Action,May 6,15,true
+lorelei,Lorelei,5,Star,Mental,Support|DPS,April 16,16,true
+lorentz-butterfly,Lorentz Butterfly,6,Intellect,Mental,Support|Lingering Glow|DPS|Rewrite,September 19,24,true
+lucy,Lucy,6,Intellect,Reality,DPS|Reaper|Extra Action,December 30,181,true
+marcus,Marcus,6,Plant,Mental,DPS|Burst DMG,January 12,17,true
+marsha,Marsha,6,Beast,Reality,Shield|Support|Lingering Glow,April 10,24,true
+matilda,Matilda,5,Star,Mental,Debuff|DPS,June 22,14,true
+medicine-pocket,Medicine Pocket,6,Beast,Mental,Heal|Debuff|Control,November 24,18,true
+melania,Melania,6,Beast,Mental,Burst DMG|DPS,March 20,18,true
+mercuria,Mercuria,6,Spirit,Mental,Support|DPS|Rank Up,February 18,16,true
+mesmer-jr,Mesmer Jr.,4,Intellect,Mental,DPS|Control,September 20,16,true
+moldir,Moldir,6,Beast,Reality,Support|Riposte|Moxie,September 13,24,true
+mondlicht,Mondlicht,4,Mineral,Reality,DPS,January 1,10,true
+mr-duncan,Mr. Duncan,5,Beast,Reality,DPS|Riposte|Reaper,June 30,61,true
+ms-moissan,Ms. Moissan,4,Mineral,Reality,Shield|Control,November 25,26,true
+ms-newbabel,Ms. NewBabel,6,Mineral,Reality,DEF|Shield|Riposte,November 16,25,true
+ms-radio,Ms. Radio,2,Spirit,Mental,DPS|Control,April 1,Unknown,true
+ms-stranger,Ms. Stranger,6,Mineral,Mental,DPS|Ultimate,April 13,19,true
+nora,NORA,4,Spirit,Reality,Support|DPS,April 22,3,true
+name-day,Name Day,5,Mineral,Mental,DPS|Ritual|Remove Buffs,January 6,23,true
+narcissus,Narcissus,6,Beast,,,March 21,,false
+nautika,Nautika,6,Spirit,Reality,DPS|Bloodtithe|Adaptive,February 16,19,true
+necrologist,Necrologist,5,Mineral,Mental,Support|DPS,November 2,17,true
+nick-bottom,Nick Bottom,4,Beast,Mental,Support,April 30,20,true
+noire,Noire,6,Plant,Mental,DPS|Burst DMG|Extra Action,February 14,41,true
+onion,ONiON,3,Mineral,Reality,DPS,February 5,24,true
+oliver-fog,Oliver Fog,4,Star,Reality,DEF|Support,December 26,15,true
+paper-heron,Paper Heron,6,Plant,Reality,DPS|Inspiration,August 15,Unknown,true
+pavia,Pavia,4,Beast,Mental,DPS|Self-healing,July 24,25,true
+pickles,Pickles,6,Mineral,Mental,DPS|Support|Dispeller,October 27,4,true
+pioneer,Pioneer,3,Spirit,Mental,Shield|Shift|Support,July 9,4,true
+poltergeist,Poltergeist,4,Spirit,Mental,Support,July 12,15,true
+rabies,Rabies,4,Plant,Reality,DPS|Poison,December 14,24,true
+ramona,Ramona,6,Plant,Mental,DPS|Poison|Rewrite,April 13,17,true
+recoleta,Recoleta,6,Mineral,Reality,DPS|Burst DMG|Moxie,July 15,17,true
+reed,Reed,4,Plant,Mental,Support,April 2,0,true
+regulus,Regulus,6,Star,Mental,DPS|Support,August 15,15,true
+rhiannon,Rhiannon,6,Beast,Mental,Support|All-Rounder,March 1,16,true
+rubuska,Rubuska,6,Mineral,Reality,Heal|Support|Bloodtithe,May 29,14,true
+satsuki,Satsuki,5,Plant,Mental,DPS|Control,May 1,16,true
+schneider,Schneider,5,Beast,Mental,,October 22,18,false
+semmelweis,Semmelweis,6,Mineral,Reality,Support|DPS|HP Sacrifice,August 19,19,true
+sentinel,Sentinel,6,Mineral,Reality,DPS|Bloodtithe|Support,December 22,26,true
+shamane,Shamane,6,Beast,Reality,DPS|Burst DMG|Debuff,March 22,45,true
+silverwing-eagle,Silverwing Eagle,5,Plant,Reality,DPS|Ultimate|Support|Follow-up Attack,July 21,16,true
+sonetto,Sonetto,5,Mineral,Reality,DPS|Support|Control,January 10,16,true
+sotheby,Sotheby,6,Plant,Reality,Poison|Heal|DPS,April 15,13,true
+spathodea,Spathodea,6,Beast,Reality,DPS|Burst DMG|Burn,January 10,14,true
+sputnik,Sputnik,3,Star,Mental,DEF|Control,October 4,Unknown,true
+sweetheart,Sweetheart,5,Beast,Reality,DPS|Control,June 1,17,true
+ttt,TTT,4,Star,Mental,DEF|Dispeller,March 12,18,true
+tennant,Tennant,5,Beast,Reality,Shield|Debuff|DPS,September 8,25,true
+the-fool,The Fool,3,Star,Mental,DEF,September 4,Unknown,true
+the-twins,The Twins,6,Star|Mineral,Reality,DPS|Conduit,June 19,Unknown,true
+tooth-fairy,Tooth Fairy,6,Star,Mental,Heal|Debuff|Purify,November 27,25,true
+tuesday,Tuesday,6,Spirit,Mental,Debuff|Poison|Support,October 30,21,true
+twins-sleep,Twins Sleep,3,Spirit,Mental,Support|Control,April 27,8,true
+ulrich,Ulrich,6,Intellect,Reality,Dynamo|Support|Extra Action,May 30,Unknown,true
+ulu,Ulu,5,Mineral,Mental,Support|DPS|Burn,January 12,Unknown,true
+vila,Vila,6,Plant,Mental,Support|Heal|Purify,April 6,26,true
+voyager,Voyager,6,Star,Mental,DPS|Control|Debuff,November 12,Unknown,true
+white-rum,White Rum,4,Intellect,Reality,DPS|Control|Shift,January 15,300,true
+willow,Willow,6,Plant,Mental,DPS|Poison|Burst DMG,November 1,25,true
+windsong,Windsong,6,Star,Mental,Burst DMG|DPS|Extra Action,October 13,22,true
+x,X,5,Intellect,Reality,Dispeller|DPS|Control,May 30,16,true
+yenisei,Yenisei,5,Star,Mental,Support|Heal|Immunity,March 4,16,true
+zima,Зима,4,Plant,Mental,Support|Control,April 28,29,true

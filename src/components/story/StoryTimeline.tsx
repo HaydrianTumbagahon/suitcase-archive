@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import { filterStoryRecords, getCharacter } from '../../data'
+import { filterStoryRecords } from '../../data'
 import type { StoryRecord } from '../../types'
-import { Chip, Icon, Panel, SmartImage, Sticker } from '../ui'
+import { Chip, Panel, SmartImage, Sticker } from '../ui'
 import { SpoilerReveal } from './SpoilerReveal'
 
 interface StoryTimelineProps {
@@ -61,15 +61,17 @@ interface TimelineRecordProps {
 function TimelineRecord({ entry, expanded, onToggle, labels }: TimelineRecordProps) {
   return (
     <li className="story-timeline__item" id={entry.id}>
-      <Panel className="story-timeline__panel" serial={entry.order}>
+      <Panel className="story-timeline__panel">
         <span aria-hidden="true" className="story-timeline__number">{entry.chapterLabel}</span>
         <header className="story-timeline__heading">
           <span className="scene-label">{entry.year ?? labels.yearUnverified} · {entry.location ?? labels.locationUnverified}</span>
           {entry.draft && <Sticker tone="verdigris" tilt={1}>DRAFT</Sticker>}
         </header>
-        <h3>{entry.title}</h3>
+        <h3>{entry.headline}</h3>
+        <p className="story-record__subtitle">{entry.title}</p>
         <SmartImage alt={`${entry.title} story artwork`} aspectRatio="16:9" className="story-timeline__image" label={entry.chapterLabel} src={entry.image} />
         <SpoilerReveal
+          contentNotes={entry.contentNotes}
           expanded={expanded}
           hideLabel={labels.hideSpoilers}
           id={`spoiler-story-${entry.id}`}
@@ -77,21 +79,16 @@ function TimelineRecord({ entry, expanded, onToggle, labels }: TimelineRecordPro
           revealLabel={labels.revealSpoilers}
           text={entry.summary}
         />
-        {entry.featuredCharacters.length > 0 && <div className="story-tag-list">
+        <blockquote className="story-critique">{entry.critique}</blockquote>
+        {entry.featuredNames.length > 0 && <div className="story-tag-list">
           <span className="story-tag-list__label">{labels.featuredLabel}</span>
-          {entry.featuredCharacters.map((characterId) => {
-            const character = getCharacter(characterId)
-            return (
-              <Link className="story-tag" key={characterId} to={`/characters/${characterId}`}>
-                {character?.afflatus && <Icon category="afflatus" size={16} value={character.afflatus} />}
-                {character?.name ?? labels.unverified}
-              </Link>
-            )
-          })}
+          {entry.featuredNames.map((person) => person.characterId
+            ? <Link className="story-tag" key={`${person.name}-${person.characterId}`} to={`/characters/${person.characterId}`}>{person.name}</Link>
+            : <span className="story-tag story-tag--plain" key={person.name}>{person.name}</span>)}
         </div>}
-        {entry.mentions.length > 0 && <div className="story-tag-list">
+        {entry.otherNames.length > 0 && <div className="story-tag-list">
           <span className="story-tag-list__label">{labels.mentionsLabel}</span>
-          {entry.mentions.map((mention) => <span className="story-tag story-tag--plain" key={mention}>{mention}</span>)}
+          {entry.otherNames.map((mention) => <span className="story-tag story-tag--plain" key={mention}>{mention}</span>)}
         </div>}
       </Panel>
     </li>

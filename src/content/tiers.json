@@ -1,40 +1,1208 @@
-[
-  {"characterId":"sonetto","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"matilda","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"apple","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"regulus","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"centurion","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"melania","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"medicine-pocket","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"dikke","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"charon","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"marcus","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"spathodea","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"alexios","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"charlie","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"enigma","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"kakania","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"tuesday","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"ramona","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"everecho","tier":"S","reason":"The supplied notes single out strong area sustain and Afflatus shifting.","draft":true},
-  {"characterId":"cornerstone","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"beryl","tier":"S+","reason":"The supplied notes identify her as a core presence in current top teams.","draft":true},
-  {"characterId":"rhiannon","tier":"S+","reason":"The supplied notes describe her as an exceptionally strong buffer who is almost always recommended.","draft":true},
-  {"characterId":"j","tier":"A","reason":"The supplied notes describe a marked improvement with Euphoria and a hybrid role.","draft":true},
-  {"characterId":"marsha","tier":"A","reason":"The supplied notes call out strong sustain and team-enabling value.","draft":true},
-  {"characterId":"fatutu","tier":"S","reason":"The supplied notes describe her as a flexible top-tier healer.","draft":true},
-  {"characterId":"isolde","tier":"A","reason":"The supplied notes emphasize her especially effective pairing with Beryl.","draft":true},
-  {"characterId":"lucy","tier":"A","reason":"The supplied notes identify her as a key choice for Dynamo-style teams.","draft":true},
-  {"characterId":"ulrich","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"brume","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"recoleta","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"sentinel","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"nautika","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"anjo-nala","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"flutterpage","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"liang-yue","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"vila","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"a-knight","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"ezio-auditore","tier":"Unrated","reason":"No notes yet.","draft":true},
-  {"characterId":"kassandra","tier":"Unrated","reason":"No notes yet.","draft":true}
-]
+{
+  "scale": [
+    {
+      "id": "S+",
+      "label": "Indispensable",
+      "blurb": "The best at what they do; teams are often built around them."
+    },
+    {
+      "id": "S",
+      "label": "First Choices",
+      "blurb": "Excellent picks that fit most strong teams."
+    },
+    {
+      "id": "A+",
+      "label": "Strong Picks",
+      "blurb": "Very good, just short of the top."
+    },
+    {
+      "id": "A",
+      "label": "Reliable",
+      "blurb": "Solid and dependable in the right team."
+    },
+    {
+      "id": "B",
+      "label": "Situational",
+      "blurb": "Works well in specific teams or content."
+    },
+    {
+      "id": "C",
+      "label": "Niche",
+      "blurb": "Narrow uses; usually replaceable."
+    },
+    {
+      "id": "D",
+      "label": "Weak",
+      "blurb": "Hard to justify except for fun or early game."
+    },
+    {
+      "id": "F",
+      "label": "Benchwarmers",
+      "blurb": "Rarely worth fielding.",
+      "minRarity": 6,
+      "minRarityNote": "Requested: only show 6-star characters in this tier. Needs rarity data in characters.json."
+    }
+  ],
+  "columns": [
+    {
+      "id": "damage",
+      "label": "Damage Dealer",
+      "blurb": "The main source of damage for the team."
+    },
+    {
+      "id": "subcarry",
+      "label": "Sub Carry",
+      "blurb": "Trades some support for personal damage; can sometimes lead."
+    },
+    {
+      "id": "support",
+      "label": "Support",
+      "blurb": "Focused on buffs, debuffs, control and utility."
+    },
+    {
+      "id": "survival",
+      "label": "Survival",
+      "blurb": "The team's defensive anchor: healing, shielding and sustain."
+    }
+  ],
+  "gameVersion": "3.8",
+  "updatedAt": "2026-10-09",
+  "draft": true,
+  "about": [],
+  "changelog": [],
+  "entries": [
+    {
+      "characterId": "beryl",
+      "name": "Beryl",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Barrel"
+    },
+    {
+      "characterId": "brume",
+      "name": "Brume",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Broom"
+    },
+    {
+      "characterId": "huntsworn-lilya",
+      "name": "Huntsworn Lilya",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Huntsworn"
+    },
+    {
+      "characterId": "lilya",
+      "name": "Lilya",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "igor",
+      "name": "Igor",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Igor"
+    },
+    {
+      "characterId": "liang-yue",
+      "name": "Liang Yue",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ms-stranger",
+      "name": "Ms. Stranger",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "noire",
+      "name": "Noire",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Neuer"
+    },
+    {
+      "characterId": "recoleta",
+      "name": "Recoleta",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "the-twins",
+      "name": "The Twins",
+      "tier": "S+",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "The Twins"
+    },
+    {
+      "characterId": "37",
+      "name": "37",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "coppelia",
+      "name": "Coppélia",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "hedone",
+      "name": "Hedone",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Hidone"
+    },
+    {
+      "characterId": "isolde",
+      "name": "Isolde",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "lorentz-butterfly",
+      "name": "Lorentz Butterfly",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "moldir",
+      "name": "Moldir",
+      "tier": "S+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "6",
+      "name": "6",
+      "tier": "S+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "charon",
+      "name": "Charon",
+      "tier": "S+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "flutterpage",
+      "name": "Flutterpage",
+      "tier": "S+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "lopera",
+      "name": "Lopera",
+      "tier": "S+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "rhiannon",
+      "name": "Rhiannon",
+      "tier": "S+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "enigma",
+      "name": "Enigma",
+      "tier": "S+",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "j",
+      "name": "J",
+      "tier": "S+",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "marsha",
+      "name": "Marsha",
+      "tier": "S+",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "narcissus",
+      "name": "Narcissus",
+      "tier": "S+",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Narcissus"
+    },
+    {
+      "characterId": "corvus",
+      "name": "Corvus",
+      "tier": "S",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Corvus"
+    },
+    {
+      "characterId": "nautika",
+      "name": "Nautika",
+      "tier": "S",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ramona",
+      "name": "Ramona",
+      "tier": "S",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "windsong",
+      "name": "Windsong",
+      "tier": "S",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "anjo-nala",
+      "name": "Anjo Nala",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "barcarola",
+      "name": "Barcarola",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "hissabeth",
+      "name": "Hissabeth",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "paper-heron",
+      "name": "Paper Heron",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ulrich",
+      "name": "Ulrich",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "willow",
+      "name": "Willow",
+      "tier": "S",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "matilda",
+      "name": "Matilda",
+      "tier": "S",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "semmelweis",
+      "name": "Semmelweis",
+      "tier": "S",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Similways"
+    },
+    {
+      "characterId": "tooth-fairy",
+      "name": "Tooth Fairy",
+      "tier": "S",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "tuesday",
+      "name": "Tuesday",
+      "tier": "S",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "everecho",
+      "name": "Everecho",
+      "tier": "S",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "fatutu",
+      "name": "Fatutu",
+      "tier": "S",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "kiperina",
+      "name": "Kiperina",
+      "tier": "S",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "rubuska",
+      "name": "Rubuska",
+      "tier": "S",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Robusca"
+    },
+    {
+      "characterId": "centurion",
+      "name": "Centurion",
+      "tier": "A+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "cornerstone",
+      "name": "Cornerstone",
+      "tier": "A+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "lucy",
+      "name": "Lucy",
+      "tier": "A+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "spathodea",
+      "name": "Spathodea",
+      "tier": "A+",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "argus",
+      "name": "Argus",
+      "tier": "A+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ezio-auditore",
+      "name": "Ezio Auditore",
+      "tier": "A+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "mercuria",
+      "name": "Mercuria",
+      "tier": "A+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "sentinel",
+      "name": "Sentinel",
+      "tier": "A+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "silverwing-eagle",
+      "name": "Silverwing Eagle",
+      "tier": "A+",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Silverwing Eagle"
+    },
+    {
+      "characterId": "aleph",
+      "name": "Aleph",
+      "tier": "A+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "cheng-heguang",
+      "name": "Chen Heguang",
+      "tier": "A+",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Heguang",
+      "image": "/images/characters/Cheng_Heguang.webp"
+    },
+    {
+      "characterId": "druvis-iii",
+      "name": "Druvis III",
+      "tier": "A+",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "getian",
+      "name": "Getian",
+      "tier": "A+",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Gishan",
+      "image": "/images/characters/Getian.webp"
+    },
+    {
+      "characterId": "medicine-pocket",
+      "name": "Medicine Pocket",
+      "tier": "A+",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "vila",
+      "name": "Vila",
+      "tier": "A+",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "a-knight",
+      "name": "A Knight",
+      "tier": "A",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "buddy-fairchild",
+      "name": "Buddy Fairchild",
+      "tier": "A",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "marcus",
+      "name": "Marcus",
+      "tier": "A",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "jessica",
+      "name": "Jessica",
+      "tier": "A",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "kassandra",
+      "name": "Kassandra",
+      "tier": "A",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "an-an-lee",
+      "name": "An-an Lee",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "eternity",
+      "name": "Eternity",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "kakania",
+      "name": "Kakania",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "melania",
+      "name": "Melania",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "pickles",
+      "name": "Pickles",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "regulus",
+      "name": "Regulus",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "voyager",
+      "name": "Voyager",
+      "tier": "A",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ezra",
+      "name": "Ezra",
+      "tier": "A",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ms-newbabel",
+      "name": "Ms. NewBabel",
+      "tier": "A",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "sotheby",
+      "name": "Sotheby",
+      "tier": "A",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Soda Bay"
+    },
+    {
+      "characterId": "yenisei",
+      "name": "Yenisei",
+      "tier": "A",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "jiu-niangzi",
+      "name": "Jiu Niangzi",
+      "tier": "B",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Ju Nyangzi",
+      "image": "/images/characters/Jiu_Niangzi.webp"
+    },
+    {
+      "characterId": "kaalaa-baunaa",
+      "name": "Kaalaa Baunaa",
+      "tier": "B",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "bkornblume",
+      "name": "Bkornblume",
+      "tier": "B",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Borkbloom"
+    },
+    {
+      "characterId": "barbara",
+      "name": "Barbara",
+      "tier": "B",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Bara"
+    },
+    {
+      "characterId": "loggerhead",
+      "name": "Loggerhead",
+      "tier": "B",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "tennant",
+      "name": "Tennant",
+      "tier": "C",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Tennant"
+    },
+    {
+      "characterId": "white-rum",
+      "name": "White Rum",
+      "tier": "C",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "avgust",
+      "name": "Avgust",
+      "tier": "C",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "desert-flannel",
+      "name": "Desert Flannel",
+      "tier": "C",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "necrologist",
+      "name": "Necrologist",
+      "tier": "C",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Necrologies"
+    },
+    {
+      "characterId": "shamane",
+      "name": "Shamane",
+      "tier": "C",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "balloon-party",
+      "name": "Balloon Party",
+      "tier": "C",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "dikke",
+      "name": "Dikke",
+      "tier": "C",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "DK"
+    },
+    {
+      "characterId": "la-source",
+      "name": "La Source",
+      "tier": "C",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "alexios",
+      "name": "Alexios",
+      "tier": "D",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "blonney",
+      "name": "Blonney",
+      "tier": "D",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Blowny"
+    },
+    {
+      "characterId": "charlie",
+      "name": "Charlie",
+      "tier": "D",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "mr-duncan",
+      "name": "Mr. Duncan",
+      "tier": "D",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "sweetheart",
+      "name": "Sweetheart",
+      "tier": "D",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "brimley",
+      "name": "Brimley",
+      "tier": "D",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "horropedia",
+      "name": "Horropedia",
+      "tier": "D",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "leilani",
+      "name": "Leilani",
+      "tier": "D",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Leilani"
+    },
+    {
+      "characterId": "sonetto",
+      "name": "Sonetto",
+      "tier": "D",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "alien-t",
+      "name": "AliEn T",
+      "tier": "D",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "darley-clatter",
+      "name": "Darley Clatter",
+      "tier": "D",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Darly"
+    },
+    {
+      "characterId": "twins-sleep",
+      "name": "Twins Sleep",
+      "tier": "D",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Twin Sleep"
+    },
+    {
+      "characterId": "x",
+      "name": "X",
+      "tier": "D",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "eagle",
+      "name": "Eagle",
+      "tier": "F",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "mondlicht",
+      "name": "Mondlicht",
+      "tier": "F",
+      "column": "damage",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "pavia",
+      "name": "Pavia",
+      "tier": "F",
+      "column": "damage",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Paviary"
+    },
+    {
+      "characterId": "apple",
+      "name": "APPLe",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "bunny-bunny",
+      "name": "Bunny Bunny",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Bunny Bunny"
+    },
+    {
+      "characterId": "click",
+      "name": "Click",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Click"
+    },
+    {
+      "characterId": "kanjira",
+      "name": "Kanjira",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "onion",
+      "name": "ONiON",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "pioneer",
+      "name": "Pioneer",
+      "tier": "F",
+      "column": "subcarry",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Pioneer"
+    },
+    {
+      "characterId": "baby-blue",
+      "name": "Baby Blue",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "bette",
+      "name": "Bette",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "diggers",
+      "name": "Diggers",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "floor",
+      "name": "Floor",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Floor"
+    },
+    {
+      "characterId": "erick",
+      "name": "Erick",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "john-titor",
+      "name": "John Titor",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "mesmer-jr",
+      "name": "Mesmer Jr.",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "miss-rachel",
+      "name": "Miss Rachel",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Miss Rachel"
+    },
+    {
+      "characterId": "nick-bottom",
+      "name": "Nick Bottom",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Nick Bottom"
+    },
+    {
+      "characterId": "oliver-fog",
+      "name": "Oliver Fog",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "sputnik",
+      "name": "Sputnik",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "ttt",
+      "name": "TTT",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "TPT"
+    },
+    {
+      "characterId": "hulu",
+      "name": "Hulu",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Hulu"
+    },
+    {
+      "characterId": "3enma",
+      "name": "Зима",
+      "tier": "F",
+      "column": "support",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "3Enma"
+    },
+    {
+      "characterId": "cristallo",
+      "name": "Cristallo",
+      "tier": "F",
+      "column": "survival",
+      "reason": null,
+      "draft": true
+    },
+    {
+      "characterId": "madame-moissan",
+      "name": "Madame Moissan",
+      "tier": "F",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Miss Moison"
+    },
+    {
+      "characterId": "poltergeist",
+      "name": "Poltergeist",
+      "tier": "F",
+      "column": "survival",
+      "reason": null,
+      "draft": true,
+      "nameNeedsCheck": true,
+      "spokenAs": "Poltergeist"
+    }
+  ],
+  "unresolved": [
+    {
+      "issue": "Lilya was dictated in both S+ damage and C damage. Kept S+. Tell me if the C-tier one is a different character or the S+ one is wrong.",
+      "names": [
+        "Lilya"
+      ]
+    },
+    {
+      "issue": "B tier: 'for the sub carry and for the supports' was dictated as one group. Tell me which of these are sub carry and which are support.",
+      "tier": "B",
+      "names": [
+        "Lorelei",
+        "Nameday",
+        "Nora",
+        "Reed"
+      ]
+    },
+    {
+      "issue": "S+ support: dictation said 'Karan'. Kakania is already in A support, so I did not add her twice. Tell me who Karan is (or if Kakania should move up).",
+      "tier": "S+",
+      "column": "support",
+      "names": [
+        "Karan"
+      ]
+    },
+    {
+      "issue": "D tier survival: dictation said 'the full' with no clear name. Not added.",
+      "tier": "D",
+      "column": "survival",
+      "names": []
+    },
+    {
+      "issue": "F tier damage: 'Beast' was dictated after Pavia. May be an afflatus label, not a character. Not added.",
+      "tier": "F",
+      "column": "damage",
+      "names": [
+        "Beast"
+      ]
+    }
+  ]
+}

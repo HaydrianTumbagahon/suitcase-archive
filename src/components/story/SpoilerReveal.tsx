@@ -4,6 +4,7 @@ interface SpoilerRevealProps {
   expanded: boolean
   revealLabel: string
   hideLabel: string
+  contentNotes?: string[]
   onToggle: () => void
 }
 
@@ -13,6 +14,7 @@ export function SpoilerReveal({
   expanded,
   revealLabel,
   hideLabel,
+  contentNotes = [],
   onToggle,
 }: SpoilerRevealProps) {
   return (
@@ -23,11 +25,14 @@ export function SpoilerReveal({
           {revealLabel}
         </button>
       )}
-      {expanded && (
-        <button aria-controls={id} aria-expanded className="story-spoiler__toggle" onClick={onToggle} type="button">
-          {hideLabel}
-        </button>
-      )}
+      {(expanded || contentNotes.length > 0) && <div className="story-spoiler__actions">
+        {expanded && (
+          <button aria-controls={id} aria-expanded className="story-spoiler__toggle" onClick={onToggle} type="button">
+            {hideLabel}
+          </button>
+        )}
+        {contentNotes.map((note) => <span className="story-warning-chip" key={note}>{note}</span>)}
+      </div>}
     </div>
   )
 }

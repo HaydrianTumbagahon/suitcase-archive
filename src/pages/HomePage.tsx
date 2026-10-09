@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom'
 import { CharacterCard } from '../components/CharacterCard'
-import { Icon, Marquee, Panel, SceneHeading, Sticker } from '../components/ui'
-import { afflatus, characters, events, home, manus, site, story, teams } from '../data'
+import { Panel, SceneHeading, Sticker } from '../components/ui'
+import { characters, events, getFeaturedCharacters, home, manus, site, story, teams } from '../data'
 import { Reveal } from '../site/Reveal'
 
 const premiseRecords = home.premise.entries.map((entry) => ({
   ...entry,
   record: site.lore.find((lore) => lore.id === entry.loreId),
 }))
-const featuredCharacters = characters.filter((character) => character.featured).slice(0, 4)
 const chapterCount = story.filter((entry) => entry.chapterLabel.startsWith('Chapter ')).length
 const latestStory = story.at(-1)
 const metaSketch = teams[0]
 
 export default function HomePage() {
+  const featuredCharacters = getFeaturedCharacters(new Date())
   const [arcanistLabel, chapterLabel, eventLabel, manusLabel] = home.featured.countLabels
   const totals = [
     [characters.length, arcanistLabel],
@@ -32,11 +32,8 @@ export default function HomePage() {
         <SceneHeading
           className="home-hero__scene"
           id="hero-scene-heading"
-          label={home.hero.sceneLabel}
-          scene={home.hero.scene}
           title={home.hero.sceneTitle}
         />
-        <p className="home-hero__guide">{home.hero.guideLabel} {site.gameVersion}</p>
         <h1 id="home-title">{home.hero.headline}</h1>
         <div className="home-hero__paper">
           <p>{home.hero.tagline}</p>
@@ -47,31 +44,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section aria-labelledby="afflatus-title" className="home-afflatus">
-        <Reveal>
-          <SceneHeading
-            id="afflatus-title"
-            label={home.afflatusLabel}
-            scene={home.afflatusScene}
-            title={home.afflatusTitle}
-          />
-        </Reveal>
-        <Marquee label={home.afflatusLabel}>
-          {afflatus.map((entry) => (
-            <span className="home-afflatus__item" key={entry.id}>
-              <Icon category="afflatus" value={entry.name} size={22} />
-              {entry.name}
-            </span>
-          ))}
-        </Marquee>
-      </section>
-
       <section aria-labelledby="premise-title" className="home-section home-premise">
-        <SceneHeading id="premise-title" label={home.premise.sceneLabel} scene={home.premise.scene} title={home.premise.title} />
+        <SceneHeading id="premise-title" title={home.premise.title} />
         <div className="home-premise__grid">
           {premiseRecords.map(({ loreId, title, record }, index) => record && (
             <Reveal className={`home-premise__reveal home-premise__reveal--${loreId}`} key={loreId}>
-              <Panel serial={index + 1} className="home-premise__panel">
+              <Panel className="home-premise__panel">
                 <div className="home-premise__title">
                   <h3>{title}</h3>
                   {record.draft && <Sticker tone="oxblood" tilt={index % 2 ? 1 : -1}>Draft</Sticker>}
@@ -84,7 +62,7 @@ export default function HomePage() {
       </section>
 
       <section aria-labelledby="featured-title" className="home-section home-featured">
-        <SceneHeading id="featured-title" label={home.featured.sceneLabel} scene={home.featured.scene} title={home.featured.title} />
+        <SceneHeading id="featured-title" title={home.featured.title} />
         <div className="home-featured__grid">
           {featuredCharacters.map((character, index) => (
             <Reveal className={`home-featured__reveal home-featured__reveal--${index + 1}`} key={character.id}>
@@ -94,9 +72,9 @@ export default function HomePage() {
         </div>
         <div aria-label={home.featured.countsLabel} className="home-counts">
           <p>{home.featured.countsLabel}</p>
-          {totals.map(([count, label], index) => (
+          {totals.map(([count, label]) => (
             <div className="home-counts__item" key={label}>
-              <strong>{count}{index === 0 ? ` of ~${site.totalCrewMembers}` : ''}</strong>
+              <strong>{count}</strong>
               <span>{label}</span>
             </div>
           ))}
@@ -106,8 +84,6 @@ export default function HomePage() {
       <section aria-labelledby="teasers-title" className="home-section home-teasers">
         <SceneHeading
           id="teasers-title"
-          label={home.teasers.sceneLabel}
-          scene={home.teasers.scene}
           title={home.teasers.sceneTitle}
         />
         <div className="home-teasers__grid">

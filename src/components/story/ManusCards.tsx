@@ -7,8 +7,6 @@ import { SpoilerReveal } from './SpoilerReveal'
 
 interface ManusCardsProps {
   labels: {
-    scene: string
-    sceneNumber: string
     title: string
     revealSpoilers: string
     hideSpoilers: string
@@ -28,7 +26,7 @@ export function ManusCards({ labels, expandedFor, toggleSpoiler }: ManusCardsPro
 
   return (
     <section aria-labelledby="manus-heading" className="story-page__section" id="manus-vindictae">
-      <SceneHeading id="manus-heading" label={labels.scene} scene={labels.sceneNumber} title={labels.title} />
+      <SceneHeading id="manus-heading" title={labels.title} />
       <p className="story-page__intro">{site.manusPageNote.summary}</p>
       <label className="story-manus-search">
         <span>{labels.searchLabel}</span>

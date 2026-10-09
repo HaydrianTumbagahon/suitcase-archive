@@ -1,18 +1,685 @@
 [
-  {"id":"prologue-this-is-tomorrow","order":1,"arc":"Prologue","chapterLabel":"Prologue","title":"This is Tomorrow","year":1966,"location":"London","summary":"A pirate transmission opens the 1966 account, with APPLe close by as the team's unusual companion. Vertin and Sonetto are at work when the Storm breaks into their day. Regulus enters the story in London.","myTake":null,"mentions":["Vertin"],"featuredCharacters":["apple","sonetto","regulus"],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-1-in-our-time","order":2,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 1","title":"In Our Time","year":1929,"location":"Chicago","summary":"Chicago's speakeasy world frames a confrontation at the Walden bar, where Schneider is both safeguard and danger. The Foundation seeks to prevent a massacre while Manus Vindictae pushes the crisis toward it. Vertin meets Sotheby as Druvis III makes her choice.","myTake":null,"mentions":["Schneider","Sotheby","Druvis III","Arcana"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-2-tender-is-the-night","order":3,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 2","title":"Tender is the Night","year":1929,"location":"Chicago","summary":"The Chicago night continues after the others escape, leaving Vertin and Schneider behind. Arcana appears as the situation takes on a more unsettling cast. The chapter remains close to the unresolved events of the prior account.","myTake":null,"mentions":["Vertin","Schneider","Arcana"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-3-nouvelles-et-textes-pour-rien","order":4,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 3","title":"Nouvelles et Textes pour Rien","year":null,"location":null,"summary":"The story turns to Vertin's youth at the School of Primary Defense of Mankind. The children seek an honest account of the world beyond their school, while Constantine knowingly sends them into the Storm. An umbrella scene brings the chapter to its close.","myTake":null,"mentions":["Vertin","Constantine"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-4-el-oro-de-los-tigres","order":5,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 4","title":"El Oro de los Tigres","year":1913,"location":null,"summary":"The chapter sets politics beside the pursuit of gold. Its account makes clear that the Storm had already been recurring for a long time. Those in power attempt to shape how its history is told.","myTake":null,"mentions":[],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-5-the-prisoner-in-the-cave","order":6,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 5","title":"The Prisoner in the Cave","year":1914,"location":null,"summary":"An island setting gives way to a world ordered around mathematics and logic. The arrival of 37 and 6 changes the shape of the account. An accompanying interlude gathers some of its emotional strands.","myTake":null,"mentions":["37","6"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"interlude-the-star","order":7,"arc":"Main Story: Chapters 1-13","chapterLabel":"Interlude","title":"The Star","year":null,"location":null,"summary":"This interlude accompanies the events of The Prisoner in the Cave. It draws several emotional threads together. Further details of its time and setting remain unverified.","myTake":null,"mentions":["37","6"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-6-e-lucevan-le-stelle","order":8,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 6","title":"E lucevan le stelle","year":1914,"location":"Vienna","summary":"In Vienna, Isolde's opera stands near the edge of the Great War. Performance and reality become difficult to separate. This is a long chapter in the supplied outline.","myTake":null,"mentions":[],"featuredCharacters":["isolde"],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-7-vereinsamt","order":9,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 7","title":"Vereinsamt","year":null,"location":null,"summary":"The account turns toward isolation and what follows it. Its focus rests on the aftermath of earlier events. From that solitude comes a decision to continue.","myTake":null,"mentions":[],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-8-tristes-tropiques","order":10,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 8","title":"Tristes Tropiques","year":1990,"location":null,"summary":"Political pressure rises as the Foundation and Manus become more strained. Santos and the Apostles Brotherhood enter the outline. The setting is dated to 1990.","myTake":null,"mentions":["Santos"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-9-folie-et-deraison","order":11,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 9","title":"Folie et Déraison","year":1991,"location":"Comala and Latin America","summary":"The chapter's outline brings together madness, prisons, and fate imagined as a closed circle. Comala and broader Latin American settings frame its events. Its year is given as 1991.","myTake":null,"mentions":[],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-10-paradise-regained","order":12,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 10","title":"Paradise Regained","year":null,"location":null,"summary":"The chapter asks what it means to reclaim something that was never one's own. Its tone is bittersweet. Further details remain unverified.","myTake":null,"mentions":[],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-11-a-long-long-way","order":13,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 11","title":"A Long Long Way","year":1920,"location":"World War I trenches","summary":"The story reaches the trenches in 1920 and weighs the possibility of peace. Sentinel and Charon stand out in the supplied account. The chapter keeps its attention on whether the fighting can give way to something else.","myTake":null,"mentions":[],"featuredCharacters":["sentinel","charon"],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-12-the-campaigns-tale","order":14,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 12","title":"The Campaign's Tale","year":1920,"location":null,"summary":"Loyalties begin to split within the 1920 account. The Foundation's internal divide is framed as Doves against Hawks. Other particulars have not been supplied.","myTake":null,"mentions":[],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"chapter-13-on-anothers-sorrow","order":15,"arc":"Main Story: Chapters 1-13","chapterLabel":"Chapter 13","title":"On Another's Sorrow","year":1921,"location":"Foundation Headquarters","summary":"The 1921 chapter centres on an assault against Foundation Headquarters. Familiar figures return to the unfolding events. Lyra has a major part in this account, which closes the 3.0 arc in version 3.7.","myTake":null,"mentions":["Lyra"],"featuredCharacters":[],"spoiler":true,"draft":true,"image":null},
-  {"id":"version-3-8-the-temporal-scale","order":16,"arc":"Version 3.8 Event","chapterLabel":"Version 3.8 Event","title":"The Temporal Scale","year":null,"location":"Eastern Europe","summary":"The Temporal Scale is set among damaged buildings that still retain their memories. Architects and supervisors move through the ruins. Everecho's character story bears the title A Fledgling's Brave Fall.","myTake":null,"mentions":[],"featuredCharacters":["everecho"],"spoiler":true,"draft":true,"image":null}
+  {
+    "id": "prologue-this-is-tomorrow",
+    "order": 1,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Prologue",
+    "title": "This is Tomorrow",
+    "headline": "The Storm Arrives on a Floppy Disk",
+    "year": 1966,
+    "location": "London",
+    "summary": "London, March 1966, and two rival organizations are sprinting toward the same prize. Agents of Manus Vindictae and of the St. Pavlov Foundation both want a pirate-radio DJ who calls herself Captain Regulus, and she is doing her best to vanish, with a talking, floating apple named APPLe for company. Vertin, the Foundation's Timekeeper, and her assistant Sonetto cheat the odds with a floppy disk labelled TeLEPorT, which pinpoints Regulus and lets them talk her toward Vertin's suitcase. A rooftop-to-alley chase across the city follows, ending with Vertin bundling the DJ and the apple inside seconds before the Storm sweeps through and reverses time on everything outside.",
+    "critique": "The opener plays like a caper, and that is the smart choice: by the time the Storm lands, the audience has already learned that the suitcase means safety. Lightness first, dread second.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "APPLe",
+        "characterId": "apple"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      }
+    ],
+    "otherNames": [
+      "Vertin"
+    ],
+    "mentions": [
+      "Vertin"
+    ],
+    "featuredCharacters": [
+      "regulus",
+      "apple",
+      "sonetto"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-1-in-our-time",
+    "order": 2,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 1",
+    "title": "In Our Time",
+    "headline": "A Hotel Full of Masks",
+    "year": 1929,
+    "location": "Chicago",
+    "summary": "The suitcase opens onto Chicago, 1929. Sonetto carries a mission with a deadline: stop the massacre of Arcanists planned for less than a week away. A woman named Schneider is already ahead of her, gunning down local gangsters who persecute Arcanists before they can act. Regulus and APPLe turn up evidence of a meeting at the Walden Hotel downtown. Vertin approaches it on foot through a forest, where a strange woman named Druvis III lives, while Sonetto hitches a ride with Sotheby, a wealthy, potion-brewing Arcanist whose startled driver ploughs into the hotel's back wall and exposes a hidden passage. Inside, Manus Vindictae's leaders, Arcana and Forget Me Not, are speeding up the Great Depression to hasten the Storm, and they use the panic of the rich guests to sell them masks that promise protection but turn the wearers into mindless servants. Sotheby and the Foundation's Arcanists try to herd the innocent out, and run into Druvis III, who is working for the other side.",
+    "critique": "Villainy here is financial before it is magical. The mask is the chapter's central image: protection offered at the cost of the self, a bargain the story keeps returning to.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Sotheby",
+        "characterId": "sotheby"
+      },
+      {
+        "name": "Druvis III",
+        "characterId": "druvis-iii"
+      },
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "APPLe",
+        "characterId": "apple"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      }
+    ],
+    "otherNames": [
+      "Schneider",
+      "Arcana",
+      "Forget Me Not",
+      "Vertin"
+    ],
+    "mentions": [
+      "Schneider",
+      "Arcana",
+      "Forget Me Not",
+      "Vertin"
+    ],
+    "featuredCharacters": [
+      "sotheby",
+      "druvis-iii",
+      "regulus",
+      "apple",
+      "sonetto"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-2-tender-is-the-night",
+    "order": 3,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 2",
+    "title": "Tender is the Night",
+    "headline": "The Last Supper Is Made of Gold",
+    "year": 1929,
+    "location": "Chicago",
+    "summary": "Sotheby gets most of the group out of the Walden, but Vertin and Schneider are left behind. Arcana wants Vertin to join her, and to make the case she locks her inside a dream in which Vertin plays happily with Schneider, never realizing that in the waking world she is firing Schneider's own gun into the real woman again and again. Across town, Sotheby returns to a mansion that has gone strangely quiet. Her butler, Mr. Karson, serves dinner, and the meal is gold, jewels and dollar bills, while reports spread of a similar sickness across the Chicago area as the Storm closes in. Back at the hotel, Vertin talks Druvis III into helping her escape, and Schneider has somehow survived because her heart sits on the opposite side of her chest. They reach a charred forest, which Sonetto's group is also heading toward after Madam Z at the Foundation tells them supplies are being routed to a refugee camp there. Both parties converge as Forget Me Not and Arcana announce the Storm's arrival. Manus Vindictae reaches its goal before anyone can stop it. The survivors retreat to the mansion for one last supper from Mr. Karson, and then the Storm takes every non-Arcanist, Schneider included.",
+    "critique": "The dream sequence is the chapter's cruellest device, turning the reader's comfort into the instrument of harm. The golden dinner is the lighter, stranger counterpart: absurd on the plate, devastating as a metaphor for what greed has left to eat.",
+    "contentNotes": [
+      "Violence",
+      "Character deaths"
+    ],
+    "featuredNames": [
+      {
+        "name": "Sotheby",
+        "characterId": "sotheby"
+      },
+      {
+        "name": "Druvis III",
+        "characterId": "druvis-iii"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Schneider",
+      "Arcana",
+      "Forget Me Not",
+      "Mr. Karson",
+      "Madam Z"
+    ],
+    "mentions": [
+      "Vertin",
+      "Schneider",
+      "Arcana",
+      "Forget Me Not",
+      "Mr. Karson",
+      "Madam Z"
+    ],
+    "featuredCharacters": [
+      "sotheby",
+      "druvis-iii"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-3-nouvelles-et-textes-pour-rien",
+    "order": 4,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 3",
+    "title": "Nouvelles et Textes pour Rien",
+    "headline": "A School Song Goes Off-Script",
+    "year": null,
+    "location": "School for the Primary Defense of Mankind",
+    "summary": "A gifted girl named Vertin, a star pupil at the School for the Primary Defense of Mankind, is shut in an isolation room after asking her principal, in public, about the Storm. Together with a band of fellow troublemakers she decides to rebel against the school's strict teachers and administrators. The first move is a school song that wanders off its lyrics while keeping the same tune, and the students do not realize they are singing Manus Vindictae propaganda, which brings the principal down on them with a heavy hand. The second move is the escape itself, a plan to slip past the guards and teachers and reach the outside world. What Vertin does not know is that she is playing into the hands of Constantine, the Foundation's Director, who lets her and her friends through the walls just as the Storm hits. Every friend who reaches the exit disappears with the rain, and Vertin is the only one left. Madam Z then appears at the gate and offers her the chance to become the Timekeeper officially.",
+    "critique": "This is the story's origin wound, and it is built on irony: a child's rebellion turns out to be someone else's plan. Notably, the horror comes less from the Storm than from an adult who judges the children's deaths an acceptable price.",
+    "contentNotes": [
+      "Deaths of children",
+      "Institutional cruelty"
+    ],
+    "featuredNames": [],
+    "otherNames": [
+      "Vertin",
+      "Constantine",
+      "Madam Z"
+    ],
+    "mentions": [
+      "Vertin",
+      "Constantine",
+      "Madam Z"
+    ],
+    "featuredCharacters": [],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-4-el-oro-de-los-tigres",
+    "order": 5,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 4",
+    "title": "El Oro de los Tigres",
+    "headline": "The Shadow War Over One Girl",
+    "year": null,
+    "location": null,
+    "summary": "Vertin is reliving her past under 'Artificial Somnambulism', a procedure supervised by her former classmate Mesmer Jr. Meanwhile Constantine and Madam Z debate what to do with Sonetto and the other Arcanists who arrived inside the suitcase. Druvis III, Sotheby and Regulus decide to push back against the Foundation, which they see as holding them without their consent, or Vertin's. While they resist openly, Madam Z and Sonetto quietly open a shadow war against Constantine, aiming to free Vertin and give the Timekeeper more independence, with a peaceful settlement as the hope. Lilya, for her part, finds herself drawn to Vertin's side.",
+    "critique": "A chapter about consent, told through bureaucracy and covert maneuvering rather than set-piece combat. The war here is over who gets to decide things for the Timekeeper.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Druvis III",
+        "characterId": "druvis-iii"
+      },
+      {
+        "name": "Sotheby",
+        "characterId": "sotheby"
+      },
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Mesmer Jr.",
+      "Constantine",
+      "Madam Z"
+    ],
+    "mentions": [
+      "Vertin",
+      "Mesmer Jr.",
+      "Constantine",
+      "Madam Z"
+    ],
+    "featuredCharacters": [
+      "druvis-iii",
+      "sotheby",
+      "regulus",
+      "lilya",
+      "sonetto"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-5-the-prisoner-in-the-cave",
+    "order": 6,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 5",
+    "title": "The Prisoner in the Cave",
+    "headline": "Arithmetic Island",
+    "year": null,
+    "location": "An island in the Aegean Sea",
+    "summary": "With Vertin rescued and an amendment passed to give her more autonomy from Constantine and the Foundation, Madam Z sends the group, plus Regulus and Lilya, to an old Manus Vindictae base where Olitiaus were once kept, a site the Storm somehow left unreversed. They find a sentient radio, decode its messages and learn their next stop: the Gorgon Current in the Aegean. Regulus is delighted to be given a new boat, APPLe II, but it is attacked and the survivors scatter. Vertin washes up on a beach where a blue-haired woman tells her she has fixed her watch, and that the year is 2007. The group regathers on a strange island of Pythagoreans, who treat mathematical logic as the highest form of existence, to the point that nearly all of them are named with numbers. Arcana has landed there too, with a handful of followers, and Sonetto lashes out at her and gets into trouble. Vertin turns the island's own logic to save her, Lilya breaks Regulus out of the cell she was locked in for breaking a taboo, and both sides try to work out why Arcana came and what she wants.",
+    "critique": "Rule-bound societies make good traps for protagonists, and this one lets the heroes win by playing the island's logic against itself. The wrong year on a stranger's wristwatch is the quietest and best unsettling detail.",
+    "contentNotes": [],
+    "featuredNames": [
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      },
+      {
+        "name": "37",
+        "characterId": "37"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Arcana",
+      "Madam Z",
+      "Constantine"
+    ],
+    "mentions": [
+      "Vertin",
+      "Arcana",
+      "Madam Z",
+      "Constantine"
+    ],
+    "featuredCharacters": [
+      "regulus",
+      "lilya",
+      "sonetto",
+      "37"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-6-e-lucevan-le-stelle",
+    "order": 7,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 6",
+    "title": "E lucevan le stelle",
+    "headline": "Opera for an Empire's Last Summer",
+    "year": 1914,
+    "location": "Vienna, Austria-Hungary",
+    "summary": "In 1914 the island is exposed to the outside world, and several nations start fighting over it with warplanes. Elsewhere, the Foundation sends two History Guards, Hofmann and Marcus, to Vienna, part of the Austro-Hungarian Empire, where Manus Vindictae leaders have been sighted; the goal is intel on how the Manus survive the Storm before the next catastrophe. The two women contend with the era's prejudice and superstition, and with Mr. Karl, the unpleasant head of the Foundation's Vienna branch. Their leads are a museum curator named Heinrich, an unlicensed therapist named Kakania, and a traumatized opera singer, Isolde, who can summon possessive spirits and may be the centre of it all. After Marcus rescues Kakania from a rigged duel, Kakania begins treating Isolde and urges her to stop suppressing her trauma and desires. Isolde takes the advice to heart, and Heinrich manipulates her into using her powers to rouse Arcanists and the downtrodden of Austria-Hungary to revolt, which speeds the Storm toward them. Vienna becomes a bloodbath, Hofmann is killed and Kakania blames herself. Marcus persuades her to look into Isolde's mind for the last lead; Kakania draws out the ritual Arcana used to shield her chosen few from the Storm, Marcus reads it with her own arcana, and the three women run for safety.",
+    "critique": "An opera in structure as well as setting: an overpowered voice, a manipulated heroine, a collapse that nobody intended. The tragedy is built from good advice carried too far, which makes it harder to dismiss.",
+    "contentNotes": [
+      "Violence",
+      "Character death",
+      "Trauma"
+    ],
+    "featuredNames": [
+      {
+        "name": "Isolde",
+        "characterId": "isolde"
+      },
+      {
+        "name": "Kakania",
+        "characterId": "kakania"
+      },
+      {
+        "name": "Marcus",
+        "characterId": "marcus"
+      }
+    ],
+    "otherNames": [
+      "Hofmann",
+      "Heinrich",
+      "Mr. Karl",
+      "Arcana"
+    ],
+    "mentions": [
+      "Hofmann",
+      "Heinrich",
+      "Mr. Karl",
+      "Arcana"
+    ],
+    "featuredCharacters": [
+      "isolde",
+      "kakania",
+      "marcus"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-7-vereinsamt",
+    "order": 8,
+    "arc": "The Living and the Rest",
+    "chapterLabel": "Chapter 7",
+    "title": "Vereinsamt",
+    "headline": "A Knot Against the Storm",
+    "year": null,
+    "location": "The Foundation and the Aegean island",
+    "summary": "At the Foundation, Lucy and the staff of the Laplace Scientific Computing Center work to decode Marcus's transmission in search of a Storm antidote. Their first attempts at the ritual kill several Foundation staff, and Enigma, furious, clashes with Lucy over the research. On the island, 37 wakes from a coma a week after its exposure, to find it can no longer fully shelter its people from the Storm. She and Vertin go back into the cave to face the trials of Apeiron, hoping to find a way past the Storm, but Vienna has hurried the First World War along, and the great powers resume fighting over the island. As bombs fall, Apeiron's followers break in body and mind, and some defect to Arcana. Sophia snaps at 37 and discovers her own number is an irrational one, then leaves with the new Manus recruits. Arcana remains, saying she stayed for Vertin. Vertin, who has spent too long planning Arcana's elimination to turn back, goes through with it: Regulus, Lilya and Sonetto flush Arcana out, Zeno teleports her to a deserted site, and a thermobaric bomb is dropped on her. Admiral Igor of Zeno thinks he hears a faint sound, writes it off as wind from the blast, and declares Arcana dead. With the Storm due again within hours, the Foundation's leaders, 37 and the surviving followers attempt a ritual to let everyone live through it unharmed. When Vertin reads the original ritual as 'The First Circle', 37 is inspired and produces a knot design that satisfies its conditions. Lucy tests it and lets the design slip to Kakania, who spreads it as widely as she can. The Storm hits and most people holding the knot survive, but 37 watches in shock as followers celebrating a Bacchanalia on the beach, beyond the island's protection, vanish, along with most of the wreckage from the battle. Vertin returns to the Foundation with 37, Regulus and Sonetto. Lilya and Druvis III receive medals, Mesmer Jr. gives Vertin a new umbrella made with the knot ritual, Marcus is given a copy and asks to return to the field, and Lucy is pushed out of Laplace for her accumulated actions over Enigma's objections, with the rest of the organization saluting her on the way out.",
+    "critique": "The longest and most ambitious chapter in the opening arc, and it deliberately refuses a clean win. Arcana's apparent death is undercut by a single dismissed sound, and the survival of the knot is shadowed by the Bacchanalia on the beach. The closing salute to Lucy is a small, dignified beat in a chapter that mostly lives on large ones.",
+    "contentNotes": [
+      "War violence",
+      "Deaths of named and unnamed characters"
+    ],
+    "featuredNames": [
+      {
+        "name": "Lucy",
+        "characterId": "lucy"
+      },
+      {
+        "name": "Enigma",
+        "characterId": "enigma"
+      },
+      {
+        "name": "37",
+        "characterId": "37"
+      },
+      {
+        "name": "Regulus",
+        "characterId": "regulus"
+      },
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      },
+      {
+        "name": "Kakania",
+        "characterId": "kakania"
+      },
+      {
+        "name": "Marcus",
+        "characterId": "marcus"
+      },
+      {
+        "name": "Druvis III",
+        "characterId": "druvis-iii"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Sophia",
+      "Arcana",
+      "Admiral Igor",
+      "Mesmer Jr."
+    ],
+    "mentions": [
+      "Vertin",
+      "Sophia",
+      "Arcana",
+      "Admiral Igor",
+      "Mesmer Jr."
+    ],
+    "featuredCharacters": [
+      "lucy",
+      "enigma",
+      "37",
+      "regulus",
+      "lilya",
+      "sonetto",
+      "kakania",
+      "marcus",
+      "druvis-iii"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-8-tristes-tropiques",
+    "order": 9,
+    "arc": "The Journey Back",
+    "chapterLabel": "Chapter 8",
+    "title": "Tristes Tropiques",
+    "headline": "Mutiny on the River Tietê",
+    "year": 1990,
+    "location": "Brazil",
+    "summary": "The Timekeeper travels to Brazil to follow a lead on 'Urd', bringing Sotheby and Lilya. They meet Admiral Igor and his adopted daughter Lopera as they execute several Zeno traitors, and learn that the Order of Enlightenment and the Apostles Brotherhood, both offshoots of Manus Vindictae, have been infiltrating Zeno units and talking them into mutiny. Lilya is left at the base while Vertin, Sotheby and Lopera head by boat down the Tietê toward São Paulo and a Zeno veterans' residence where a blind doctor reportedly treats the locals, but curiosity takes them first to a locked tower, where Vertin accidentally breaks a seal. On the boat she meets Ms. Kimberly, whom she had encountered at Tuesday's Motel, who turns out to want nothing more than some stolen bread, while Lopera plays a game with a preacher named Santos. Pirates then attack and sink the boat. Sotheby washes ashore inside a large fish caught by Mr. Duncan, who strikingly resembles her late butler Karson, though he denies any connection, and he takes her to a favela where the Apostles Brotherhood is recruiting. After Sotheby publicly denounces Santos, Duncan creates a scene to work his way into the group. Vertin, saved from drowning by Kimberly but made ill by polluted water, is rescued by Doctor Dores while she treats children in a favela. Mercado, a mercenary employed by Santos, captures Dores in exchange for everyone else's lives. Lopera and Duncan infiltrate the Brotherhood, free one of Duncan's friends, and join Vertin's group at the veterans' residence to plan Dores's rescue. The next day Admiral Igor launches his own plan with loyal lieutenants Moldir and Ptolemy: tired of fighting what he sees as a losing battle, he intends to defect to Manus Vindictae. He tells Lilya he believes Arcana is alive, then has her jailed on a pretext, though Moldir leaves orders to free her when the shooting starts and Arcanist Zeno soldiers open fire on their human comrades. In São Paulo, Ptolemy uses a wind-up toy from San Francisco as a totem to force Kimberly to kill Vertin; Kimberly resists, but is compelled to throttle her, until Vertin grabs a pistol and shoots through the toy, breaking the hold and freeing Kimberly to take revenge on nearby Zeno soldiers. Elsewhere, Lopera defeats Santos and rescues Dores, but Moldir's troops arrive to take Dores into custody and Moldir tries to recruit Lopera. When Lopera refuses to join Igor's plot, Moldir shoots her with a round that turns out to be a tranquilizer. The group regroups and tries to recover Dores, but too many traitorous Zeno soldiers block the way, and Igor takes Moldir and the doctor to Tierra del Fuego. There he meets the Preacher, who is revealed to be Sophia and who insists on her own terms; Igor agrees and takes a certain container in exchange. Back at Foundation headquarters, Duncan is questioned about his resemblance to Karson, Lilya hints that Moldir might be persuaded to come back, Constantine discusses recent developments with the President of the Pax Security Council, and a heartbroken Lopera empties her gun into a wall.",
+    "critique": "The story moves from fantasy to politics here, and the Manus read less like cultists than like organizers who exploit grievance and exhaustion. Igor's betrayal works because it is framed as fatigue rather than evil. The final image of Lopera firing at a wall until the gun is empty says more than any speech could.",
+    "contentNotes": [
+      "Violence",
+      "Betrayal",
+      "Attempted strangulation"
+    ],
+    "featuredNames": [
+      {
+        "name": "Sotheby",
+        "characterId": "sotheby"
+      },
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      },
+      {
+        "name": "Lopera",
+        "characterId": "lopera"
+      },
+      {
+        "name": "Santos",
+        "characterId": null
+      },
+      {
+        "name": "Sophia",
+        "characterId": null
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Admiral Igor",
+      "Moldir",
+      "Ptolemy",
+      "Ms. Kimberly",
+      "Mr. Duncan",
+      "Doctor Dores",
+      "Mercado",
+      "Constantine"
+    ],
+    "mentions": [
+      "Vertin",
+      "Admiral Igor",
+      "Moldir",
+      "Ptolemy",
+      "Ms. Kimberly",
+      "Mr. Duncan",
+      "Doctor Dores",
+      "Mercado",
+      "Constantine"
+    ],
+    "featuredCharacters": [
+      "sotheby",
+      "lilya",
+      "lopera"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-9-folie-et-deraison",
+    "order": 10,
+    "arc": "The Journey Back",
+    "chapterLabel": "Chapter 9",
+    "title": "Folie et Déraison",
+    "headline": "A Prison That Writes Itself",
+    "year": 1991,
+    "location": "Ushuaia and Comala Prison",
+    "summary": "After Igor's betrayal in Brazil, and after the events aboard the Free Breeze, Vertin and Sonetto go to Ushuaia to pick up Dores's trail before Manus Vindictae can complete its plans for her. A struggling writer named Recoleta tells them Dores set off toward Comala Prison, notorious home of criminally insane Arcanists. Recoleta wants in herself, so she guides the pair there, and Vertin persuades the jailer, a talking jaguar, to open the door. Comala is not an ordinary prison. A panopticon looms at its centre, but the prisoners have formed their own literary society, La Sociedad de Poetas de las Américas, led by a man called The Idealist. Vertin hopes to find Dores, Recoleta hopes to find her pen pal Aleph, and both must dig into the Society and the truths buried in Comala. Eventually the three women gain an audience with The Physician, who runs the prison as warden. He reveals that he and The Idealist are two aspects of Aleph, the true warden of Comala, a human who was given a special die holding vast Arcane power by Manus Vindictae. Once Recoleta accepts her own identity as a storyteller, Aleph points Vertin and Sonetto to a nearby boat that carried Dores and other Manus figures to a hidden base at the South Pole, and they set off at once. Behind them, the Panopticon collapses with nobody left to watch it, the formerly compliant prisoners spill into Ushuaia, and the jailer, with her purpose gone, lies down in the flames of the burning prison.",
+    "critique": "Comala is a prison of books, and the chapter is at its best when it treats storytelling as both confinement and escape. The warden who splits himself into rival personas is a neat answer to the panopticon, and the jailer's quiet end after the watching stops is its sharpest image.",
+    "contentNotes": [
+      "Mental illness themes",
+      "Fire"
+    ],
+    "featuredNames": [
+      {
+        "name": "Recoleta",
+        "characterId": "recoleta"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Aleph",
+      "The Idealist",
+      "The Physician",
+      "Doctor Dores"
+    ],
+    "mentions": [
+      "Vertin",
+      "Aleph",
+      "The Idealist",
+      "The Physician",
+      "Doctor Dores"
+    ],
+    "featuredCharacters": [
+      "recoleta",
+      "sonetto"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-10-paradise-regained",
+    "order": 11,
+    "arc": "The Journey Back",
+    "chapterLabel": "Chapter 10",
+    "title": "Paradise Regained",
+    "headline": "The Flood at the End of the World",
+    "year": null,
+    "location": "Antarctica",
+    "summary": "The Foundation and its Zeno forces race to the South Pole to stop Manus Vindictae from finishing its master plan, but the Manus have magical beasts and Zeno defectors led by Admiral Igor and Moldir guarding the coast. On one stretch of shoreline, Ulrich and an Arcanist guard try to slip in to support Vertin and are quickly caught by Moldir, who quietly lets them go and even hands them a talking squirrel named Buddy Fairchild as backup. Vertin and Sonetto keep following Dr. Dores's trail across the ice and find the lone survivor of a research station, a woman named Nautika, who has been sending a desperate warning over a broken radio telling everyone to stay away; her mind has been shattered by what she saw and by watching her colleagues die one by one. After an initial fight, Vertin offers to let Nautika hold on to Ms. Radio while the others continue, but Nautika decides to guide them through the snow instead. After a harrowing trek through snow, caves, dire wolves and a maze, and with help from a highly placed mole, Ms. Stranger, they locate the Manus ritual site. At the gate Nautika watches one of her friends be sacrificed to open the chamber. The group has to fight its way in but cannot get through before the gate closes, and Nautika sacrifices herself so the others can pass. Inside, Sonetto fights Sophia while Vertin finds Dr. Dores beside an arcane spinning wheel like the one in her suitcase. The ritual has already begun. Arcana, supposedly dead, appears in a new body and unleashes a Storm stronger than anything the Foundation prepared for, called the Flood, which she says will return the world to a primeval age ruled by Arcanists. As humans are washed away across the Arctic, Vertin nearly dies, but Dores helps her smash the spinning wheel before the Flood can finish her.",
+    "critique": "A finale that raises the stakes from a city to the planet while keeping its best scenes small: Moldir's quiet mercy, Nautika's choice at the gate. Arcana's return in a new body is the less surprising beat, since the previous arc planted the doubt, but it pays off the unease left by the faint sound in Chapter 7.",
+    "contentNotes": [
+      "Sacrifice",
+      "Death",
+      "Psychological trauma"
+    ],
+    "featuredNames": [
+      {
+        "name": "Ulrich",
+        "characterId": "ulrich"
+      },
+      {
+        "name": "Sonetto",
+        "characterId": "sonetto"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Moldir",
+      "Admiral Igor",
+      "Buddy Fairchild",
+      "Nautika",
+      "Ms. Stranger",
+      "Ms. Radio",
+      "Sophia",
+      "Doctor Dores",
+      "Arcana"
+    ],
+    "mentions": [
+      "Vertin",
+      "Moldir",
+      "Admiral Igor",
+      "Buddy Fairchild",
+      "Nautika",
+      "Ms. Stranger",
+      "Ms. Radio",
+      "Sophia",
+      "Doctor Dores",
+      "Arcana"
+    ],
+    "featuredCharacters": [
+      "ulrich",
+      "sonetto"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-11-a-long-long-way",
+    "order": 12,
+    "arc": "The Roots of the Tale",
+    "chapterLabel": "Chapter 11",
+    "title": "A Long Long Way",
+    "headline": "Peace Table, War Table",
+    "year": 1920,
+    "location": "Western Front, alternate 1920",
+    "summary": "Vertin stopped the Manus ritual from flooding the Earth, but Arcana is back. The Foundation and Vertin's allies now find themselves in an alternate 1920 in which the First World War is still going. While trying to end it quickly, the Foundation is split between the Doves, who want both sides at the negotiating table before things get worse, and the Hawks, who say no progress is possible until Manus Vindictae is wiped out. Initial talks collapse when a French sniper assassinates a German colonel. In a German trench, a wounded soldier nicknamed Charon walks the lines collecting mementos from the fallen on every side, trying to keep his last living friend from sliding into bloodlust now that the friend commands the troops. Nearby, a Foundation agent and field medic named Marsha meets the French sniper, who admits she shot the colonel after finding evidence that the Manus were influencing him to prolong the war. Later, Sentinel helps Marsha, rescuing her from an armoured car and from soldiers also swayed by the Manus. Cold at first, Sentinel warms to Marsha and invites her to meet her family of gargoyles, who have each been affected by the war in different ways. Soon after, Sentinel gives Marsha a stack of documents exposing Manus collaborators on both sides. Marsha hands them to the Foundation, which uses them to bring the world's leaders back to the table at Montpaix. The troops on the front cheer, thinking peace has arrived, but the Manus show their hand with an attack on Montpaix that kills soldiers, negotiators and Foundation personnel. The Foundation's XII detachment, a special forces team led by Creius, repels the first wave, and the second is a battalion of Arcanist Manus soldiers striking both German and French lines. Creius rallies survivors from both armies against them and gives Sentinel explosives to destroy the Manus's underground base. Sentinel faces her own private hell inside it, accepting that she may become a demon if that is what it takes to save more lives, and succeeds in blowing up the base. Creius leads the troops to victory, Marsha heals everyone she can, and Charon keeps walking the battlefield.",
+    "critique": "A war chapter that treats ceasefire as the thing in danger, not the thing already achieved. The cross-lines cooperation against the Manus is the emotional payoff, and Charon's wandering, collecting small remnants of the dead, is the chapter's recurring image of grief with no one to give it to.",
+    "contentNotes": [
+      "War violence",
+      "Mass casualties"
+    ],
+    "featuredNames": [
+      {
+        "name": "Charon",
+        "characterId": "charon"
+      },
+      {
+        "name": "Marsha",
+        "characterId": "marsha"
+      },
+      {
+        "name": "Sentinel",
+        "characterId": "sentinel"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Arcana",
+      "Creius"
+    ],
+    "mentions": [
+      "Vertin",
+      "Arcana",
+      "Creius"
+    ],
+    "featuredCharacters": [
+      "charon",
+      "marsha",
+      "sentinel"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  },
+  {
+    "id": "chapter-12-the-campaigns-tale",
+    "order": 13,
+    "arc": "The Roots of the Tale",
+    "chapterLabel": "Chapter 12",
+    "title": "The Campaign's Tale",
+    "headline": "Warm Weather on the Don",
+    "year": 1920,
+    "location": "Don River steppe, Russia",
+    "summary": "Russia in the 1920s. The fields along the Don River are going barren under unnaturally warm weather, and bandits are multiplying across the steppe. Zeno Commander Ivan leads a force of Cossacks against both that threat and the Manus Vindictae forces trying to profit from the chaos. Things get worse when the bandits acquire weapons that should not exist in this era and are led by a traitorous Zeno officer named Krutov. The split also opens an opportunity: the turncoat Admiral Igor offers to join forces with Ivan to crush both threats. Meanwhile the Timekeeper travels there to see Igor and follow one of her few remaining leads on Urd, and learns more than she intended. Lilya leads a new flight of strike witches to destroy the latest Manus ritual, but still wants revenge on Igor for what he did in São Paulo.",
+    "critique": "The most compact chapter in the main line, and a deliberate pivot: it ties Igor's betrayal and Lilya's grudge to the Urd lead, so that three open threads converge on one steppe.",
+    "contentNotes": [
+      "War violence"
+    ],
+    "featuredNames": [
+      {
+        "name": "Lilya",
+        "characterId": "lilya"
+      }
+    ],
+    "otherNames": [
+      "Vertin",
+      "Commander Ivan",
+      "Krutov",
+      "Admiral Igor",
+      "Urd"
+    ],
+    "mentions": [
+      "Vertin",
+      "Commander Ivan",
+      "Krutov",
+      "Admiral Igor",
+      "Urd"
+    ],
+    "featuredCharacters": [
+      "lilya"
+    ],
+    "spoiler": true,
+    "draft": true,
+    "image": null
+  }
 ]

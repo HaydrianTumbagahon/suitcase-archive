@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom'
-import { events, getCharacter } from '../../data'
+import { events } from '../../data'
 import type { EventRecord } from '../../types'
 import { Panel, SceneHeading, Sticker } from '../ui'
 import { SpoilerReveal } from './SpoilerReveal'
 
 interface EventStoriesProps {
   labels: {
-    scene: string
-    sceneNumber: string
     title: string
     revealSpoilers: string
     hideSpoilers: string
@@ -22,7 +20,7 @@ interface EventStoriesProps {
 export function EventStories({ labels, expandedFor, toggleSpoiler }: EventStoriesProps) {
   return (
     <section aria-labelledby="event-stories-heading" className="story-page__section" id="event-stories">
-      <SceneHeading id="event-stories-heading" label={labels.scene} scene={labels.sceneNumber} title={labels.title} />
+      <SceneHeading id="event-stories-heading" title={labels.title} />
       <div className="story-page__cards">
         {events.map((event) => <EventCard
           event={event}
@@ -47,12 +45,14 @@ function EventCard({ event, expanded, onToggle, labels }: EventCardProps) {
   return (
     <Panel className="story-event-card" id={event.id}>
       <div className="story-record__heading">
-        <Sticker tone="brass" tilt={1}>{event.version ?? labels.unverified}</Sticker>
+        {event.version && <Sticker tone="brass" tilt={1}>{event.version}</Sticker>}
         {event.draft && <Sticker tone="verdigris" tilt={-1}>DRAFT</Sticker>}
       </div>
-      <h3>{event.title}</h3>
+      <h3>{event.headline}</h3>
+      <p className="story-record__subtitle">{event.title}</p>
       <p className="story-event-card__tone">{event.tone ?? labels.unverified}</p>
       <SpoilerReveal
+        contentNotes={event.contentNotes}
         expanded={expanded}
         hideLabel={labels.hideSpoilers}
         id={`spoiler-event-${event.id}`}
@@ -60,13 +60,16 @@ function EventCard({ event, expanded, onToggle, labels }: EventCardProps) {
         revealLabel={labels.revealSpoilers}
         text={event.summary ?? labels.unverified}
       />
-      {event.featuredCharacters.length > 0 && <div className="story-tag-list">
+      <blockquote className="story-critique">{event.critique}</blockquote>
+      {event.featuredNames.length > 0 && <div className="story-tag-list">
         <span className="story-tag-list__label">{labels.featuredLabel}</span>
-        {event.featuredCharacters.map((id) => <Link className="story-tag" key={id} to={`/characters/${id}`}>{getCharacter(id)?.name ?? labels.unverified}</Link>)}
+        {event.featuredNames.map((person) => person.characterId
+          ? <Link className="story-tag" key={`${person.name}-${person.characterId}`} to={`/characters/${person.characterId}`}>{person.name}</Link>
+          : <span className="story-tag story-tag--plain" key={person.name}>{person.name}</span>)}
       </div>}
-      {event.mentions.length > 0 && <div className="story-tag-list">
+      {event.otherNames.length > 0 && <div className="story-tag-list">
         <span className="story-tag-list__label">{labels.mentionsLabel}</span>
-        {event.mentions.map((mention) => <span className="story-tag story-tag--plain" key={mention}>{mention}</span>)}
+        {event.otherNames.map((mention) => <span className="story-tag story-tag--plain" key={mention}>{mention}</span>)}
       </div>}
     </Panel>
   )

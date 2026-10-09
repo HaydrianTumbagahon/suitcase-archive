@@ -10,6 +10,8 @@
     { "characterId": "replace-with-character-id", "carry": false }
   ],
   "howItWorks": "",
+  "replacements": [],
+  "notes": [],
   "tierLabel": null,
   "gameVersion": "3.8",
   "opinion": true,

@@ -22,9 +22,12 @@ The character catalog is [`src/content/characters.json`](./src/content/character
   "id": "sample-arcanist",
   "name": "Sample Arcanist",
   "rarity": 6,
-  "afflatus": "Star",
+  "afflatus": ["Star"],
   "damage": "Mental",
   "roles": ["DPS", "Support"],
+  "birthday": "July 27",
+  "age": "Unknown",
+  "dataComplete": true,
   "debutVersion": "3.8",
   "debutNote": null,
   "dossier": "A short, independently written introduction.",
@@ -37,7 +40,9 @@ The character catalog is [`src/content/characters.json`](./src/content/character
 }
 ```
 
-`id` is the stable URL slug; `name` is the display name. `rarity` is a number or `null`; `afflatus` is one of Beast, Plant, Mineral, Star, Spirit, or Intellect; `damage` is Reality or Mental. `roles` is a list of role tags. `debutVersion` and `debutNote` may be `null`. `dossier` is the profile introduction. `psychubes` holds Psychube IDs, and `buildNotes` holds build-note text. `featured` controls whether the character is highlighted on the home page. `verified` records editorial review, while `draft` controls whether the record is still a draft. `image` is a public image path or `null`.
+`id` is a unique string used in the profile URL; numeric-looking IDs such as `"6"` and `"37"` must remain quoted strings. `name` is the display name. `rarity` is an integer from 2 to 6 or `null`. `afflatus` is an array containing one or more of Beast, Plant, Mineral, Star, Spirit, or Intellect; use `[]` when unverified. `damage` is Reality, Mental, or `null`. `roles` is a list of tags from the vocabulary below. `birthday` and `age` are strings or `null`; use `"Unknown"` when the roster explicitly marks a value unknown and `null` when it is missing. `dataComplete` is a boolean; when false the site displays Unverified and Details pending. `debutVersion` and `debutNote` may be `null`. `dossier` is an independently written profile introduction or `null`; a null dossier displays a "No dossier yet" note. `psychubes` holds Psychube IDs, and `buildNotes` holds build-note text. `featured: true` puts the character into the pool for the rotating home-page feature; it does not promise that the character appears every day. `featuredWeight` is optional and defaults to `1`. A higher number gives the character a better chance when the site picks the rotating selection (for example, weight `3` gives three times the draw weight of weight `1`). To favor a character, raise this number; it must be a positive number. `verified` records editorial review, while `draft` controls whether the record is still a draft. `image` is a public image path or `null`.
+
+The `featuredRotation` setting in `src/content/site.json` controls the home-page picks. `mode: "daily"` changes the selection by UTC date, `mode: "weekly"` changes it by UTC ISO week, and `mode: "static"` always shows the first `count` featured characters in catalog order. `count` is how many characters to show. You can preview the upcoming selections with `npm run check:featured`.
 
 To add a character quickly, run `npm run new:character -- "Sample Arcanist"`. The command creates a slug ID, fills optional facts with `null`, leaves the record as an unverified draft, adds an Unrated tier entry, and validates the data. Then edit the new record with any known details. New characters automatically join the character list, filters, and their `/characters/<id>` profile route; no page component changes are needed.
 
@@ -57,18 +62,28 @@ Add Psychube records to [`src/content/psychubes.json`](./src/content/psychubes.j
 
 ## Story chapters
 
-Add chapters to [`src/content/story.json`](./src/content/story.json):
+The editorial source is [`src/content/story-editorial.json`](./src/content/story-editorial.json). Add each chapter there with its `id`, `number`, arc ID, original `title`, `headline`, `year`, `location`, `summary`, `critique`, `contentNotes`, `featuredNames`, and `otherNames`. Keep every summary spoiler-sensitive; the story page gates summaries behind its reveal control. `featuredNames` and `otherNames` in the editorial source are display names.
+
+Mirror the chapter in [`src/content/story.json`](./src/content/story.json) in the same order:
 
 ```json
 {
   "id": "chapter-example-the-crossing",
   "order": 999,
-  "arc": "Main Story: Chapters 1-13",
+  "arc": "Story arc title",
   "chapterLabel": "Chapter 14",
   "title": "The Crossing",
+  "headline": "An original editorial headline",
   "year": null,
   "location": null,
   "summary": "An independently written summary in your own words.",
+  "critique": "A short reading of the chapter's structure or themes.",
+  "contentNotes": [],
+  "featuredNames": [
+    { "name": "Character Name", "characterId": "character-id" },
+    { "name": "Unmatched Name", "characterId": null }
+  ],
+  "otherNames": ["Another Name"],
   "mentions": [],
   "featuredCharacters": [],
   "spoiler": true,
@@ -77,21 +92,28 @@ Add chapters to [`src/content/story.json`](./src/content/story.json):
 }
 ```
 
-Set `order` to a unique number after the last record in the intended reading sequence. The timeline uses this number, not the year, so a chapter with an unknown or out-of-sequence year still appears in the correct place. `arc` groups chapters; use an existing arc name or a new descriptive one. `chapterLabel` is the human-facing chapter or episode label; `title` is its title. `year` and `location` may each be `null`. Write `summary` independently in your own words. `mentions` is a list of plain-text names; `featuredCharacters` is a list of existing character IDs that link to profiles. Keep `spoiler` and `draft` true. `image` is optional.
+Use an existing arc title in the rendered record and update its chapter-number list in `story-editorial.json`. Map a featured name to a character ID when that character exists; otherwise set `characterId` to `null` so it remains a plain chip. `featuredCharacters` contains the mapped IDs for character appearance lookups. Keep `spoiler` and `draft` true. `image` is optional.
 
 Replace `999` with the next unused `order` value before saving.
 
 ## Event stories
 
-Add event records to [`src/content/events.json`](./src/content/events.json):
+Add editorial event details to `story-editorial.json` and mirror the record in [`src/content/events.json`](./src/content/events.json):
 
 ```json
 {
   "id": "sample-event-story",
   "title": "Sample Event Story",
+  "headline": "An original editorial headline",
   "version": null,
+  "year": null,
+  "location": null,
   "tone": null,
   "summary": null,
+  "critique": "A short reading of the event's structure or themes.",
+  "contentNotes": [],
+  "featuredNames": [],
+  "otherNames": [],
   "featuredCharacters": [],
   "mentions": [],
   "spoiler": true,
@@ -101,7 +123,7 @@ Add event records to [`src/content/events.json`](./src/content/events.json):
 }
 ```
 
-`title` is the event name. `version`, `tone`, `summary`, `image`, and the optional related `storyId` may be `null`. `featuredCharacters` contains existing character IDs; `mentions` contains text-only names. If `storyId` is supplied, it must match a story chapter ID. Event summaries must be your own wording. Keep spoiler and draft flags true. Run `npm run new:event -- "Sample Event Story"` to generate a blank event; it validates automatically. Events appear on `/story` without component edits.
+`title` is the original event name; the headline is the displayed card title. `version` is optional; `year`, `location`, `tone`, `summary`, `image`, and the optional related `storyId` may be `null`. Match featured names to character IDs where possible, leaving unmatched names as plain chips. Keep spoiler and draft flags true. Run `npm run new:event -- "Sample Event Story"` to add a blank record to both files; it validates automatically. Events appear on `/story` without component edits.
 
 ## Manus lords
 
@@ -140,6 +162,15 @@ Add team records to [`src/content/teams.json`](./src/content/teams.json):
     { "characterId": "existing-character-four", "carry": false }
   ],
   "howItWorks": "Explain the team's plan in your own words.",
+  "replacements": [
+    {
+      "role": "Main DPS",
+      "best": ["existing-character-id"],
+      "good": [],
+      "acceptable": []
+    }
+  ],
+  "notes": [],
   "tierLabel": null,
   "gameVersion": "3.8",
   "opinion": true,
@@ -148,7 +179,7 @@ Add team records to [`src/content/teams.json`](./src/content/teams.json):
 }
 ```
 
-`archetype` groups the team in the Meta page. `explainer` is the short description; `members` must contain exactly four different existing character IDs, with one `carry: true`. `howItWorks` describes the plan. `tierLabel` may be `S+`, `S`, `A`, `B`, or `null`. `gameVersion` records the version the opinion applies to. Keep `opinion` and `draft` true; `image` may be `null`.
+`archetype` groups the team in the Meta page. `explainer` is the short description; `members` must contain exactly four different existing character IDs, with one `carry: true`. `howItWorks` describes the plan. `replacements` holds optional per-role options, ordered as best-in-slot, good replacements, and acceptable or emergency options; each list uses existing character IDs. `notes` is a list of short team-specific notes. `tierLabel` may be `S+`, `S`, `A`, `B`, or `null`. `gameVersion` records the version the opinion applies to. Keep `opinion` and `draft` true; `image` may be `null`.
 
 ## Tier entries
 
@@ -165,13 +196,33 @@ Add tier entries to [`src/content/tiers.json`](./src/content/tiers.json):
 
 There is one tier entry per character. `characterId` must match a character `id`; `tier` is `S+`, `S`, `A`, `B`, or `Unrated`; `reason` is your opinion or note. Keep entries in draft while they are work in progress. The new-character command adds an Unrated entry automatically.
 
+## Game icon images
+
+Icon artwork should be exported at 128x128 pixels as a transparent PNG or WebP, with roughly 8% padding around the artwork so it does not touch the edge. Use a lowercase filename such as `beast.webp` and place it in the matching folder:
+
+- Afflatus: `public/images/icons/afflatus/`
+- Damage type: `public/images/icons/damage/`
+- Role: `public/images/icons/roles/`
+
+Set the matching path in `src/content/site.json` under `icons`. For example, for a Beast icon:
+
+```json
+"icons": {
+  "afflatus": {
+    "beast": "/images/icons/afflatus/beast.webp"
+  }
+}
+```
+
+The map lists each afflatus and damage type with a `null` value, and `roles` starts as an empty object. Replace a value with the path to its file in `site.json` when adding artwork. For example, use `"/images/icons/afflatus/beast.webp"` for the Beast path. Keep it `null` or leave the role key out to show the text label without an image. `npm run validate:data` checks that every non-null icon path points to an existing file. Icons are optional; the interface does not draw fallback glyphs.
+
 ## Roles and other catalogs
 
 The current role vocabulary in [`src/content/site.json`](./src/content/site.json) is:
 
-`DPS`, `Burst DMG`, `Healer`, `Support`, `Sub-DPS`, `Main Carry`, `Dynamo`, `Extra Action`, `Burn`, `Poison`, `Dispeller`, `Assassination`, `Sustain`, `Barrier`, `Team Buffs`, `Conduit`, `Riposte`, `Shield`, `Lingering Glow`, and `All-Rounder`.
+`DPS`, `Follow-up Attack`, `Support`, `Debuff`, `Purify`, `Heal`, `Inspiration`, `Burst DMG`, `Assassination`, `Control`, `Dispeller`, `DEF`, `Shield`, `Lingering Glow`, `Extra Action`, `Dynamo`, `Ritual`, `Remove Debuffs`, `Conduit`, `Array`, `Nasty Wound`, `Riposte`, `Moxie`, `Burn`, `Poison`, `Remove Buffs`, `Immunity`, `Rewrite`, `Reaper`, `Rank Up`, `Ultimate`, `Bloodtithe`, `Adaptive`, `Self-healing`, `Shift`, `All-Rounder`, and `HP Sacrifice`.
 
-Use these exact spellings in character `roles`. To add a role, add its label to `site.json`'s `roles` array, add the same value to `ROLE_VALUES` in `src/types.ts`, then add a lowercase, punctuation-free icon key and glyph in `iconPaths` and `allowedValues.role` in `src/components/ui/Icon.tsx`. The validator checks character roles against `site.json`; the TypeScript and icon updates keep the rest of the app consistent.
+Use these exact spellings in character `roles`. To add a role, add its label to `site.json`'s `roles` array and add the same value to `ROLE_VALUES` in `src/types.ts`. If you have an image for it, set the matching lowercase, punctuation-free key under `site.json`'s `icons.roles` map using the icon instructions above. The validator checks character roles against `site.json`.
 
 The remaining catalogs are `src/content/afflatus.json` (six afflatus matchup records), `src/content/site.json` (site settings, roles, lore, and page copy), `src/content/home.json` (home-page copy and premise references), and `src/content/legal.json` (disclaimer and loader text). Matching record templates, including afflatus and site lore, are in `_templates/`. Premise references in `home.json` must use IDs that exist in `site.json`'s `lore` list.
 
@@ -188,4 +239,4 @@ npm run validate:data
 npm run build
 ```
 
-The build runs the validator first and stops if it finds bad JSON, duplicate IDs or story order, invalid role or afflatus values, unknown character/story references, missing tier entries, incorrect draft/spoiler flags, or missing image files.
+The build runs the validator first and stops if it finds bad JSON, duplicate IDs or story order, invalid role or afflatus values, unknown character/story references, missing tier entries, incorrect draft/spoiler flags, or missing image files (including configured icons).

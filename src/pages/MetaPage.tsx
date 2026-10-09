@@ -12,20 +12,20 @@ export default function MetaPage() {
   const copy = site.metaPage
 
   return (
-    <PageFrame scene={copy.scene} serial={copy.serial} title={copy.title} intro={copy.intro}>
+    <PageFrame title={copy.title} intro={copy.intro}>
       <div className="meta-opinion-banner">
         <span>{`VERSION ${site.gameVersion} · ${copy.draft} · ${copy.banner}`}</span>
       </div>
       <section aria-labelledby="archetype-guide-heading" className="meta-section">
-        <SceneHeading id="archetype-guide-heading" label={copy.archetypeScene} scene={copy.archetypeSceneNumber} title={copy.archetypeTitle} />
+        <SceneHeading id="archetype-guide-heading" title={copy.archetypeTitle} />
         <ArchetypeGuide />
       </section>
       <section aria-labelledby="team-compositions-heading" className="meta-section">
-        <SceneHeading id="team-compositions-heading" label={copy.teamsScene} scene={copy.teamsSceneNumber} title={copy.teamsTitle} />
+        <SceneHeading id="team-compositions-heading" title={copy.teamsTitle} />
         <TeamCompositions />
       </section>
       <section aria-labelledby="tier-list-heading" className="meta-section">
-        <SceneHeading id="tier-list-heading" label={copy.tiersScene} scene={copy.tiersSceneNumber} title={copy.tiersTitle} />
+        <SceneHeading id="tier-list-heading" title={copy.tiersTitle} />
         <TierList role={role} onRoleChange={setRole} />
       </section>
     </PageFrame>

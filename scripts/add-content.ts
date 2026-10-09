@@ -40,12 +40,15 @@ function createRecord(id) {
       id,
       name,
       rarity: null,
-      afflatus: null,
+      afflatus: [],
       damage: null,
       roles: [],
+      birthday: null,
+      age: null,
+      dataComplete: false,
       debutVersion: null,
       debutNote: null,
-      dossier: '',
+      dossier: null,
       psychubes: [],
       buildNotes: [],
       featured: false,
@@ -70,9 +73,16 @@ function createRecord(id) {
   return {
     id,
     title: name,
+    headline: name,
     version: null,
+    year: null,
+    location: null,
     tone: null,
     summary: null,
+    critique: 'Editorial critique pending.',
+    contentNotes: [],
+    featuredNames: [],
+    otherNames: [],
     featuredCharacters: [],
     mentions: [],
     spoiler: true,
@@ -103,6 +113,35 @@ function main() {
     ...target,
     next: appendedContent(target.raw, target.records, createRecord(id)),
   }]
+
+  if (kind === 'event') {
+    const editorialPath = resolve(contentDirectory, 'story-editorial.json')
+    const editorialRaw = readFileSync(editorialPath, 'utf8')
+    const editorial = JSON.parse(editorialRaw)
+    if (!Array.isArray(editorial.events)) throw new Error('story-editorial.json events must contain an array')
+    if (editorial.events.some((record) => record.id === id)) {
+      throw new Error(`story-editorial.json already contains event id "${id}"`)
+    }
+    editorial.events.push({
+      id,
+      title: name,
+      headline: name,
+      version: null,
+      year: null,
+      location: null,
+      tone: null,
+      summary: null,
+      critique: 'Editorial critique pending.',
+      contentNotes: [],
+      featuredNames: [],
+      otherNames: [],
+    })
+    changes.push({
+      path: editorialPath,
+      raw: editorialRaw,
+      next: `${JSON.stringify(editorial, null, 2)}\n`,
+    })
+  }
 
   if (kind === 'character') {
     const tiers = readRecords('tiers.json')

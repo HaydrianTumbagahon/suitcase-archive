@@ -8,7 +8,15 @@ import type { CharacterFilters, CharacterSort, Role } from '../types'
 import { Button } from '../components/ui'
 import { PageFrame } from '../site/PageFrame'
 
-const rarities = [...new Set(characters.flatMap(({ rarity }) => rarity === null ? [] : [rarity]))].sort((a, b) => a - b)
+const rarities = [2, 3, 4, 5, 6]
+const roleCounts = characters.reduce((counts, character) => {
+  character.roles.forEach((role) => counts.set(role, (counts.get(role) ?? 0) + 1))
+  return counts
+}, new Map<Role, number>())
+const rolesByFrequency = [...site.roles].sort((first, second) =>
+  (roleCounts.get(second) ?? 0) - (roleCounts.get(first) ?? 0))
+const commonRoles = rolesByFrequency.slice(0, 12)
+const additionalRoles = rolesByFrequency.slice(12)
 const sortValues: CharacterSort[] = ['name', 'release-new', 'release-old', 'rarity', 'tier']
 const filterParams = ['q', 'afflatus', 'rarity', 'damage', 'role', 'sort']
 
@@ -55,25 +63,34 @@ export default function CharactersPage() {
   }, { replace: true })
   const hasFilters = Boolean(filters.search || filters.afflatus || filters.rarity !== undefined
     || filters.damage || filters.roles?.length || (filters.sort && filters.sort !== 'name'))
+  const activeFilterCount = [
+    Number(Boolean(filters.search)),
+    Number(Boolean(filters.afflatus)),
+    Number(filters.rarity !== undefined),
+    Number(Boolean(filters.damage)),
+    filters.roles?.length ?? 0,
+  ].reduce((total, count) => total + count, 0)
 
   return (
     <PageFrame
-      scene="SCENE 02 — DOSSIER ROOM"
-      serial="INDEX / 001"
       title="Characters"
       intro="Browse the arcanists in the archive. Unconfirmed details remain marked as unverified."
     >
-      <FilterBar filters={filters} onChange={updateFilters} rarities={rarities} roles={site.roles} />
+      <FilterBar
+        activeFilterCount={activeFilterCount}
+        filters={filters}
+        hasFilters={hasFilters}
+        onChange={updateFilters}
+        onClear={clearFilters}
+        rarities={rarities}
+        resultCount={matches.length}
+        additionalRoles={additionalRoles}
+        commonRoles={commonRoles}
+      />
       <div className="character-results">
-        <div className="character-results__heading">
-          <div>
-            <p aria-live="polite" className="record-count">{matches.length} {matches.length === 1 ? 'arcanist' : 'arcanists'} found</p>
-            <p className="character-archive-note">
-              Archive holds {characters.length} of ~{site.totalCrewMembers} crew members. More arriving.
-            </p>
-          </div>
-          <Button onClick={clearFilters} variant="secondary">Clear all</Button>
-        </div>
+        <p className="character-archive-note">
+          {characters.length} crew members catalogued
+        </p>
       {matches.length > 0 ? (
         <ul className="character-grid">
           {matches.map((character) => (
